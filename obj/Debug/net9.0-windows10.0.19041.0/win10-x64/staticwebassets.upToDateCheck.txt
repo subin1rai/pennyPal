@@ -1,0 +1,8 @@
+C:\Users\Subi\Desktop\THIRD YEAR\Application Development (.NET)\Coursework\PennyPal\PennyPal\wwwroot\css\bootstrap\bootstrap.min.css.map
+C:\Users\Subi\Desktop\THIRD YEAR\Application Development (.NET)\Coursework\PennyPal\PennyPal\wwwroot\css\app.css
+C:\Users\Subi\Desktop\THIRD YEAR\Application Development (.NET)\Coursework\PennyPal\PennyPal\wwwroot\index.html
+C:\Users\Subi\Desktop\THIRD YEAR\Application Development (.NET)\Coursework\PennyPal\PennyPal\wwwroot\css\bootstrap\bootstrap.min.css
+wwwroot\css\app.css
+wwwroot\css\bootstrap\bootstrap.min.css
+wwwroot\css\bootstrap\bootstrap.min.css.map
+wwwroot\index.html
