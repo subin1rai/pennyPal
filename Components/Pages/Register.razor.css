@@ -1,0 +1,95 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+
+.hero {
+}
+
+.main-img {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.login {
+    position: absolute;
+    top: 25%;
+    padding-left: 16px;
+    color: black;
+    font-size: 32px;
+    font-weight: 600;
+    z-index: 100; /* Ensure text appears above the image */
+}
+
+.pennypal {
+    position: absolute;
+    top: 8%;
+    z-index: 50;
+    left: 30%;
+    font-size: 40px;
+    font-weight: 800;
+    color: white;
+    background-color: transparent;
+}
+
+.welcome {
+    position: absolute;
+    top: 28%;
+    padding-left: 16px;
+    color: #626262;
+    font-size: 24px;
+    font-weight: 400;
+    z-index: 100;
+    margin-top: 8px;
+}
+
+.textfield {
+    padding: 0 16px;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.userlabel {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.userinput {
+    border: none;
+    padding: 20px;
+    background-color: #E4E4E4;
+    border-radius: 12px;
+}
+
+.button {
+    width: 100%;
+    padding: 12px;
+    color: white;
+    background-color: #2BA84A;
+    border: none;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.loginBtn {
+    padding: 0 16px;
+    margin-top: 20px;
+}
+
+.registerLink {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.link {
+    padding-left: 4px;
+    color: #2BA84A;
+    text-decoration: none;
+}

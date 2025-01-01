@@ -1,0 +1,85 @@
+﻿@page "/register"
+@using PennyPal.Components.Layout
+@layout FirstLayout
+@inject UserService UserService
+@inject NavigationManager NavigationManager
+@using PennyPal.Model;
+
+
+<div class="hero">
+    <img class="main-img" src="Images/Vector.png" />
+    <h2 class="pennypal">PennyPal</h2>
+    <h2 class="login">Register</h2>
+    <h2 class="welcome">welcome back!</h2>
+
+    <div class="textfield">
+       <div class="userlabel">
+            <label for="username"  class="user-label">Username</label>
+        <input @bind="RegisterUsername" placeholder="Username" id="username" class="userinput"/>
+       </div>
+        <div class="userlabel">
+            <label for="email"  class="user-label">Email</label>
+        <input @bind="RegisterEmail" placeholder="Email" id="email" class="userinput"/>
+       </div>
+       <div class="userlabel">
+            <label for="password"  class="user-label">password</label>
+    <input @bind="RegisterPassword" placeholder="Password" id="password" type="password" class="userinput" />
+       </div>
+    </div>
+
+    <div class="loginBtn">
+    <button @onclick="RegisterPage" class="button">Register</button>
+    </div>
+    <p class="registerLink">
+    Don't have an account? 
+    <a href="/" class="link">Login</a>
+    </p>
+</div>
+
+@if (!string.IsNullOrEmpty(Message))
+{
+    <p>@Message</p>
+}
+
+@code {
+    private string RegisterUsername = "";
+    private string RegisterPassword = "";
+    private string RegisterEmail = "";
+    private string Message = "";
+
+    private List<User> Users = new();
+
+    protected override void OnInitialized()
+    {
+        Users = UserService.LoadUsers();
+    }
+
+    private void RegisterPage()
+    {
+        if (string.IsNullOrWhiteSpace(RegisterUsername) || string.IsNullOrWhiteSpace(RegisterPassword))
+        {
+            Message = "Username and password are required.";
+            return;
+        }
+
+        if (Users.Any(u => u.Username == RegisterUsername))
+        {
+            Message = "Username already exists.";
+            return;
+        }
+
+        // Create new user and hash the password
+        var newUser = new User
+            {
+                Username = RegisterUsername,
+                Password = UserService.HashPassword(RegisterPassword),  // Hash the password
+                Email = RegisterEmail
+            };
+
+        Users.Add(newUser);
+        UserService.SaveUsers(Users);
+
+        Message = "Registration successful. Redirecting to login...";
+        Task.Delay(2000).ContinueWith(_ => NavigationManager.NavigateTo("/"));
+    }
+}

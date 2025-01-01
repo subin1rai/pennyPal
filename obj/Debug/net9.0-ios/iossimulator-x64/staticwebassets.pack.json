@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-ios\\iossimulator-x64\\scopedcss\\bundle\\PennyPal.styles.css",
+      "PackagePath": "staticwebassets\\PennyPal.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0-ios\\iossimulator-x64\\staticwebassets\\msbuild.PennyPal.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0-ios\\iossimulator-x64\\staticwebassets\\msbuild.PennyPal.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0-ios\\iossimulator-x64\\staticwebassets\\msbuild.build.PennyPal.props",
+      "PackagePath": "build\\PennyPal.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0-ios\\iossimulator-x64\\staticwebassets\\msbuild.buildMultiTargeting.PennyPal.props",
+      "PackagePath": "buildMultiTargeting\\PennyPal.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0-ios\\iossimulator-x64\\staticwebassets\\msbuild.buildTransitive.PennyPal.props",
+      "PackagePath": "buildTransitive\\PennyPal.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

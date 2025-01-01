@@ -1,0 +1,84 @@
+﻿@page "/"
+@using PennyPal.Components.Layout
+@layout FirstLayout
+@inject UserService UserService
+@inject NavigationManager NavigationManager
+@using PennyPal.Model;
+@if (IsLoggedIn)
+{
+    NavigationManager.NavigateTo("/dashboard");
+}
+else
+{
+    <div class="hero">
+        <img class="main-img" src="Images/Vector.png" />
+        <h2 class="pennypal">PennyPal</h2>
+        <h2 class="login">Login</h2>
+        <h2 class="welcome">welcome back!</h2>
+
+        <div class="textfield">
+            <div class="userlabel">
+                <label for="username"  class="user-label">Username</label>
+                <input @bind="LoginUsername" placeholder="Username" id="username" class="userinput"/>
+            </div>
+
+            <div class="userlabel">
+                <label for="password"  class="user-label">password</label>
+                <input @bind="LoginPassword" placeholder="Password" id="password" type="password" class="userinput" />
+            </div>
+        </div>
+
+        <div class="loginBtn">
+            <button @onclick="LoginPage" class="button">Login</button>
+        </div>
+        <p class="registerLink">
+            Already have an account? 
+            <a href="/register" class="link">Register</a>
+        </p>
+    </div>
+}
+
+
+@if (!string.IsNullOrEmpty(Message))
+{
+  <p>@Message</p>
+}
+
+@code {
+    private string LoginUsername = "";
+    private string LoginPassword = "";
+    private string Message = "";
+    private bool IsLoggedIn  = false;
+
+
+    private List<User> Users = new();
+
+    protected override void OnInitialized()
+    {
+        Users = UserService.LoadUsers();
+    }
+
+    private void LoginPage()
+    {
+        try
+        {
+            var user = Users.FirstOrDefault(u => u.Username == LoginUsername);
+
+            if (user != null && UserService.ValidatePassword(LoginPassword, user.Password))
+            {
+                IsLoggedIn = true;
+                NavigationManager.NavigateTo("/dashboard");
+            }
+            else
+            {
+                Message = "Invalid username or password.";
+            }
+        }
+        catch (Exception ex)
+        {
+            Message = $"An error occurred: {ex.Message}";
+            Console.WriteLine(ex);
+        }
+    }
+
+}

@@ -1,0 +1,53 @@
+﻿@page "/dashboard"
+
+<div class="hero">
+        <div class="gradient">
+        <img class="das-img" src="Images/Gradient.png" />
+        </div>
+
+        <div class="box">
+          <div class="box-data">
+            <div class="top-row">
+                <div class="detail">
+                    <p>PennyPal</p>
+                    <h3 >Subin Rai</h3>
+                </div>
+                <h1>NRP. 3,578</h1>
+            </div>
+
+           <div class="transaction">
+                <p>Transaction ID</p>
+                <p class="num">XXX XXX XXXX</p>
+           </div>
+
+           <div class="deposit">
+               <img src="Images/add.png"/>
+               <P>Add inFlow</P>
+           </div>
+          </div>
+
+          <div class="feature">
+              <h1>Features</h1>
+               
+              @* Card *@
+              <div class="card-row">
+                <a href="/inflow" class="card">
+                    <img src="Images/inflow.png" alt="Cash Inflow" />
+                    <p>Cash Inflow</p>
+                </a>
+                <a href="/outflow" class="card">
+                    <img src="Images/outflow.png" alt="Cash Outflow" />
+                    <p>Cash Inflow</p>
+                </a>
+                <a href="/depts" class="card">
+                    <img src="Images/depts.png" alt="Cash Depts" />
+                    <p>Cash Inflow</p>
+                </a>
+    
+            </div>
+          </div>
+    </div>
+</div>
+@code {
+
+}

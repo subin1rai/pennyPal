@@ -1,0 +1,14 @@
+C:\Users\Subi\Desktop\AD\PennyPal\PennyPal\wwwroot\css\bootstrap\bootstrap.min.css.map
+C:\Users\Subi\Desktop\AD\PennyPal\PennyPal\wwwroot\css\app.css
+C:\Users\Subi\Desktop\AD\PennyPal\PennyPal\wwwroot\index.html
+C:\Users\Subi\Desktop\AD\PennyPal\PennyPal\wwwroot\css\bootstrap\bootstrap.min.css
+wwwroot\css\app.css
+wwwroot\css\bootstrap\bootstrap.min.css
+wwwroot\css\bootstrap\bootstrap.min.css.map
+wwwroot\Images\add.png
+wwwroot\Images\depts.png
+wwwroot\Images\Gradient.png
+wwwroot\Images\inflow.png
+wwwroot\Images\outflow.png
+wwwroot\Images\Vector.png
+wwwroot\index.html
