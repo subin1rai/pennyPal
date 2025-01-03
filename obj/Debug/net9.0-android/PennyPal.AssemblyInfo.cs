@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PennyPal")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+4e8394492abe1b959badc232a30e54e7ec49a778")]
 [assembly: System.Reflection.AssemblyProductAttribute("PennyPal")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PennyPal")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

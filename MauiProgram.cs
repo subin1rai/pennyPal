@@ -16,6 +16,8 @@ namespace PennyPal
 
             builder.Services.AddMauiBlazorWebView();
             builder.Services.AddSingleton<UserService>();
+            builder.Services.AddScoped<Model.LoginSession>();
+            //builder.Services.AddSingleton<TransactionService>();
 
 
 #if DEBUG

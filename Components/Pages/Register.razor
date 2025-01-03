@@ -15,15 +15,15 @@
     <div class="textfield">
        <div class="userlabel">
             <label for="username"  class="user-label">Username</label>
-        <input @bind="RegisterUsername" placeholder="Username" id="username" class="userinput"/>
+        <input @bind="Username" placeholder="Username" id="username" class="userinput"/>
        </div>
         <div class="userlabel">
             <label for="email"  class="user-label">Email</label>
-        <input @bind="RegisterEmail" placeholder="Email" id="email" class="userinput"/>
+        <input @bind="Email" placeholder="Email" id="email" class="userinput"/>
        </div>
        <div class="userlabel">
             <label for="password"  class="user-label">password</label>
-    <input @bind="RegisterPassword" placeholder="Password" id="password" type="password" class="userinput" />
+    <input @bind="Password" placeholder="Password" id="password" type="password" class="userinput" />
        </div>
     </div>
 
@@ -42,9 +42,9 @@
 }
 
 @code {
-    private string RegisterUsername = "";
-    private string RegisterPassword = "";
-    private string RegisterEmail = "";
+    private string Username = "";
+    private string Password = "";
+    private string Email = "";
     private string Message = "";
 
     private List<User> Users = new();
@@ -56,13 +56,13 @@
 
     private void RegisterPage()
     {
-        if (string.IsNullOrWhiteSpace(RegisterUsername) || string.IsNullOrWhiteSpace(RegisterPassword))
+        if (string.IsNullOrWhiteSpace(Username) || string.IsNullOrWhiteSpace(Password))
         {
             Message = "Username and password are required.";
             return;
         }
 
-        if (Users.Any(u => u.Username == RegisterUsername))
+        if (Users.Any(u => u.Username == Username))
         {
             Message = "Username already exists.";
             return;
@@ -71,9 +71,10 @@
         // Create new user and hash the password
         var newUser = new User
             {
-                Username = RegisterUsername,
-                Password = UserService.HashPassword(RegisterPassword),  // Hash the password
-                Email = RegisterEmail
+                Userid = Users.Count + 1,
+                Username = Username,
+                Password = UserService.HashPassword(Password), // Hash the password
+                Email = Email
             };
 
         Users.Add(newUser);

@@ -5,6 +5,30 @@
       "PackagePath": "staticwebassets\\PennyPal.styles.css"
     },
     {
+      "Id": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\wwwroot\\Images\\Gradient.png",
+      "PackagePath": "staticwebassets\\Images\\Gradient.png"
+    },
+    {
+      "Id": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\wwwroot\\Images\\Vector.png",
+      "PackagePath": "staticwebassets\\Images\\Vector.png"
+    },
+    {
+      "Id": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\wwwroot\\Images\\add.png",
+      "PackagePath": "staticwebassets\\Images\\add.png"
+    },
+    {
+      "Id": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\wwwroot\\Images\\depts.png",
+      "PackagePath": "staticwebassets\\Images\\depts.png"
+    },
+    {
+      "Id": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\wwwroot\\Images\\inflow.png",
+      "PackagePath": "staticwebassets\\Images\\inflow.png"
+    },
+    {
+      "Id": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\wwwroot\\Images\\outflow.png",
+      "PackagePath": "staticwebassets\\Images\\outflow.png"
+    },
+    {
       "Id": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },

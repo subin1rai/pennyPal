@@ -1,4 +1,5 @@
 ﻿@page "/dashboard"
+@inject NavigationManager NavigationManager
 
 <div class="hero">
         <div class="gradient">
@@ -31,7 +32,7 @@
                
               @* Card *@
               <div class="card-row">
-                <a href="/inflow" class="card">
+                <a href="/transactions" class="card">
                     <img src="Images/inflow.png" alt="Cash Inflow" />
                     <p>Cash Inflow</p>
                 </a>
@@ -39,7 +40,7 @@
                     <img src="Images/outflow.png" alt="Cash Outflow" />
                     <p>Cash Inflow</p>
                 </a>
-                <a href="/depts" class="card">
+                <a href="/debt" class="card">
                     <img src="Images/depts.png" alt="Cash Depts" />
                     <p>Cash Inflow</p>
                 </a>

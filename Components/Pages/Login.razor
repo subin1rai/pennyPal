@@ -4,6 +4,7 @@
 @inject UserService UserService
 @inject NavigationManager NavigationManager
 @using PennyPal.Model;
+@inject LoginSession LoginSession
 @if (IsLoggedIn)
 {
     NavigationManager.NavigateTo("/dashboard");
@@ -18,12 +19,12 @@ else
 
         <div class="textfield">
             <div class="userlabel">
-                <label for="username"  class="user-label">Username</label>
-                <input @bind="LoginUsername" placeholder="Username" id="username" class="userinput"/>
+                <label for="username" class="user-label">Username</label>
+                <input @bind="LoginUsername" placeholder="Username" id="username" class="userinput" />
             </div>
 
             <div class="userlabel">
-                <label for="password"  class="user-label">password</label>
+                <label for="password" class="user-label">Password</label>
                 <input @bind="LoginPassword" placeholder="Password" id="password" type="password" class="userinput" />
             </div>
         </div>
@@ -32,24 +33,25 @@ else
             <button @onclick="LoginPage" class="button">Login</button>
         </div>
         <p class="registerLink">
-            Already have an account? 
+            Already have an account?
             <a href="/register" class="link">Register</a>
         </p>
     </div>
 }
 
-
 @if (!string.IsNullOrEmpty(Message))
 {
-  <p>@Message</p>
+    <p>@Message</p>
 }
 
 @code {
-    private string LoginUsername = "";
+    private string LoginUsername = ""   ;
     private string LoginPassword = "";
     private string Message = "";
-    private bool IsLoggedIn  = false;
+    private bool IsLoggedIn = false;
 
+    // Store the logged-in user's ID
+    private Guid LoggedInUserId;
 
     private List<User> Users = new();
 
@@ -67,7 +69,9 @@ else
             if (user != null && UserService.ValidatePassword(LoginPassword, user.Password))
             {
                 IsLoggedIn = true;
-                NavigationManager.NavigateTo("/dashboard");
+                LoginSession.LoggedInUser = user;
+                // Pass the LoggedInUserId as a query parameter to the dashboard page
+                NavigationManager.NavigateTo($"/dashboard?userId={LoggedInUserId}");
             }
             else
             {
@@ -80,5 +84,4 @@ else
             Console.WriteLine(ex);
         }
     }
-
 }

@@ -342,3 +342,11 @@ C:\Users\Subi\Desktop\AD\PennyPal\PennyPal\obj\Debug\net9.0-maccatalyst\maccatal
 C:\Users\Subi\Desktop\AD\PennyPal\PennyPal\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\PennyPal.pdb
 C:\Users\Subi\Desktop\AD\PennyPal\PennyPal\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\PennyPal.genruntimeconfig.cache
 C:\Users\Subi\Desktop\AD\PennyPal\PennyPal\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\ref\PennyPal.dll
+C:\Users\Subi\Desktop\AD\PennyPal\PennyPal\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\scopedcss\Components\Pages\Dashboard.razor.rz.scp.css
+C:\Users\Subi\Desktop\AD\PennyPal\PennyPal\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\scopedcss\Components\Pages\Login.razor.rz.scp.css
+C:\Users\Subi\Desktop\AD\PennyPal\PennyPal\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\scopedcss\Components\Pages\Register.razor.rz.scp.css
+C:\Users\Subi\Desktop\AD\PennyPal\PennyPal\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\compressed\i0nxk1d540-sun2dmef2w.gz
+C:\Users\Subi\Desktop\AD\PennyPal\PennyPal\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\compressed\s6lxhk16z5-sun2dmef2w.gz
+C:\Users\Subi\Desktop\AD\PennyPal\PennyPal\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\compressed\publish\i0nxk1d540-sun2dmef2w.br
+C:\Users\Subi\Desktop\AD\PennyPal\PennyPal\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\compressed\publish\s6lxhk16z5-sun2dmef2w.br
+C:\Users\Subi\Desktop\AD\PennyPal\PennyPal\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\PennyPal.sourcelink.json

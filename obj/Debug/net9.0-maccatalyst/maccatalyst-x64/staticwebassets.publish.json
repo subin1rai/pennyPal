@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Yg6ZyR/ivtLmBr+FYcAgQknxBHIMNsRyujjXbHFjgVg=",
+  "Hash": "Rl3fU0x2InZNqg+oT2rxYU0oL2KRNVcj7f2FrFTqToM=",
   "Source": "PennyPal",
   "BasePath": "/",
   "Mode": "Root",
@@ -80,12 +80,12 @@
       "OriginalItemSpec": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\wwwroot\\index.html"
     },
     {
-      "Identity": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\compressed\\i0nxk1d540-s1n1nkw4b3.gz",
+      "Identity": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\compressed\\i0nxk1d540-sun2dmef2w.gz",
       "SourceId": "PennyPal",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "PennyPal#[.{fingerprint=s1n1nkw4b3}]?.styles.css.gz",
+      "RelativePath": "PennyPal#[.{fingerprint=sun2dmef2w}]?.styles.css.gz",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Alternative",
@@ -94,8 +94,8 @@
       "RelatedAsset": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\scopedcss\\bundle\\PennyPal.styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "i1lifwwx61",
-      "Integrity": "+pULD1qEJ4uvz/aH+Xtmjzee8G6i/EYyDTZK/JkwhNI=",
+      "Fingerprint": "afojckuzpi",
+      "Integrity": "mgHiPnlXXjDse2rIHZAiR+VtO2Sxuil6P8DYV6a2OIM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\scopedcss\\bundle\\PennyPal.styles.css"
@@ -164,12 +164,12 @@
       "OriginalItemSpec": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\wwwroot\\index.html"
     },
     {
-      "Identity": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\compressed\\publish\\i0nxk1d540-s1n1nkw4b3.br",
+      "Identity": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\compressed\\publish\\i0nxk1d540-sun2dmef2w.br",
       "SourceId": "PennyPal",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\compressed\\publish\\",
       "BasePath": "/",
-      "RelativePath": "PennyPal#[.{fingerprint=s1n1nkw4b3}]?.styles.css.br",
+      "RelativePath": "PennyPal#[.{fingerprint=sun2dmef2w}]?.styles.css.br",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Alternative",
@@ -178,8 +178,8 @@
       "RelatedAsset": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\scopedcss\\bundle\\PennyPal.styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "br",
-      "Fingerprint": "oszhvclo1w",
-      "Integrity": "iLFVnsUCF6Xq62BqNtAMB2YCvcZDK3UqpNu9hVEJQhA=",
+      "Fingerprint": "sq054hbdgl",
+      "Integrity": "BOuxnVa5dwh9rl9q6vUC/Sf/Ax/NLxffNobnO3eVPAE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\scopedcss\\bundle\\PennyPal.styles.css"
@@ -206,12 +206,12 @@
       "OriginalItemSpec": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\compressed\\publish\\s6lxhk16z5-s1n1nkw4b3.br",
+      "Identity": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\compressed\\publish\\s6lxhk16z5-sun2dmef2w.br",
       "SourceId": "PennyPal",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\compressed\\publish\\",
       "BasePath": "/",
-      "RelativePath": "PennyPal#[.{fingerprint=s1n1nkw4b3}]!.bundle.scp.css.br",
+      "RelativePath": "PennyPal#[.{fingerprint=sun2dmef2w}]!.bundle.scp.css.br",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Alternative",
@@ -220,8 +220,8 @@
       "RelatedAsset": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\scopedcss\\projectbundle\\PennyPal.bundle.scp.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "br",
-      "Fingerprint": "oszhvclo1w",
-      "Integrity": "iLFVnsUCF6Xq62BqNtAMB2YCvcZDK3UqpNu9hVEJQhA=",
+      "Fingerprint": "sq054hbdgl",
+      "Integrity": "BOuxnVa5dwh9rl9q6vUC/Sf/Ax/NLxffNobnO3eVPAE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\scopedcss\\projectbundle\\PennyPal.bundle.scp.css"
@@ -248,12 +248,12 @@
       "OriginalItemSpec": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\compressed\\s6lxhk16z5-s1n1nkw4b3.gz",
+      "Identity": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\compressed\\s6lxhk16z5-sun2dmef2w.gz",
       "SourceId": "PennyPal",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "PennyPal#[.{fingerprint=s1n1nkw4b3}]!.bundle.scp.css.gz",
+      "RelativePath": "PennyPal#[.{fingerprint=sun2dmef2w}]!.bundle.scp.css.gz",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Alternative",
@@ -262,8 +262,8 @@
       "RelatedAsset": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\scopedcss\\projectbundle\\PennyPal.bundle.scp.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "i1lifwwx61",
-      "Integrity": "+pULD1qEJ4uvz/aH+Xtmjzee8G6i/EYyDTZK/JkwhNI=",
+      "Fingerprint": "afojckuzpi",
+      "Integrity": "mgHiPnlXXjDse2rIHZAiR+VtO2Sxuil6P8DYV6a2OIM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\scopedcss\\projectbundle\\PennyPal.bundle.scp.css"
@@ -283,8 +283,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "s1n1nkw4b3",
-      "Integrity": "8HF1UeueqUwV6WAeoejNltdVRSZrajO+SX+0tLpe4es=",
+      "Fingerprint": "sun2dmef2w",
+      "Integrity": "vDW8Y3F+A7CSFr5LhnHJwPBUoQXfbaf78U7Mr5sHbpQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\scopedcss\\bundle\\PennyPal.styles.css"
@@ -304,8 +304,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "s1n1nkw4b3",
-      "Integrity": "8HF1UeueqUwV6WAeoejNltdVRSZrajO+SX+0tLpe4es=",
+      "Fingerprint": "sun2dmef2w",
+      "Integrity": "vDW8Y3F+A7CSFr5LhnHJwPBUoQXfbaf78U7Mr5sHbpQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\scopedcss\\projectbundle\\PennyPal.bundle.scp.css"
@@ -372,6 +372,132 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\wwwroot\\Images\\add.png",
+      "SourceId": "PennyPal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "Images/add#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6rihqj5tb7",
+      "Integrity": "znBfTqHJu2CnU73cbyjN+KxyfcioPBetrcrpnMKfF+4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\add.png"
+    },
+    {
+      "Identity": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\wwwroot\\Images\\depts.png",
+      "SourceId": "PennyPal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "Images/depts#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "m1dqilurmc",
+      "Integrity": "dtUVckk8R1bDf07oAMaVqoOtuVpJ42Mlu/yUOL1mzkk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\depts.png"
+    },
+    {
+      "Identity": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\wwwroot\\Images\\Gradient.png",
+      "SourceId": "PennyPal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "Images/Gradient#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9ddc1wh89h",
+      "Integrity": "UwA6HmyKTSuXZRAV+a8teNtNTdlPFhSv57vO/pAzetY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Gradient.png"
+    },
+    {
+      "Identity": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\wwwroot\\Images\\inflow.png",
+      "SourceId": "PennyPal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "Images/inflow#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "w1385n02ow",
+      "Integrity": "dCJvscKoBE8WR+B3xF6bhX+hCTt9KWcrAqf8Lf71ubY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\inflow.png"
+    },
+    {
+      "Identity": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\wwwroot\\Images\\outflow.png",
+      "SourceId": "PennyPal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "Images/outflow#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ofhh24iwdh",
+      "Integrity": "hGTyQ4k4DJQMR9GMP/Up6ibsDYvHBSTWjGbpmquJr7M=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\outflow.png"
+    },
+    {
+      "Identity": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\wwwroot\\Images\\Vector.png",
+      "SourceId": "PennyPal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "Images/Vector#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "c24xp438pi",
+      "Integrity": "1AtznXBBzKZQ1kpiexElg5d6hqfgtQSRwQd0poOL1pA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Vector.png"
     },
     {
       "Identity": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\wwwroot\\index.html",
@@ -1939,6 +2065,498 @@
       ]
     },
     {
+      "Route": "Images/add.6rihqj5tb7.png",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\wwwroot\\Images\\add.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "306"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"znBfTqHJu2CnU73cbyjN+KxyfcioPBetrcrpnMKfF+4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 01 Jan 2025 12:59:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6rihqj5tb7"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/add.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-znBfTqHJu2CnU73cbyjN+KxyfcioPBetrcrpnMKfF+4="
+        }
+      ]
+    },
+    {
+      "Route": "Images/add.png",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\wwwroot\\Images\\add.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "306"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"znBfTqHJu2CnU73cbyjN+KxyfcioPBetrcrpnMKfF+4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 01 Jan 2025 12:59:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-znBfTqHJu2CnU73cbyjN+KxyfcioPBetrcrpnMKfF+4="
+        }
+      ]
+    },
+    {
+      "Route": "Images/depts.m1dqilurmc.png",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\wwwroot\\Images\\depts.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1035"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dtUVckk8R1bDf07oAMaVqoOtuVpJ42Mlu/yUOL1mzkk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 01 Jan 2025 14:27:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m1dqilurmc"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/depts.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dtUVckk8R1bDf07oAMaVqoOtuVpJ42Mlu/yUOL1mzkk="
+        }
+      ]
+    },
+    {
+      "Route": "Images/depts.png",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\wwwroot\\Images\\depts.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1035"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dtUVckk8R1bDf07oAMaVqoOtuVpJ42Mlu/yUOL1mzkk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 01 Jan 2025 14:27:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dtUVckk8R1bDf07oAMaVqoOtuVpJ42Mlu/yUOL1mzkk="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Gradient.9ddc1wh89h.png",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\wwwroot\\Images\\Gradient.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "503901"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UwA6HmyKTSuXZRAV+a8teNtNTdlPFhSv57vO/pAzetY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 01 Jan 2025 12:21:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9ddc1wh89h"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Gradient.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UwA6HmyKTSuXZRAV+a8teNtNTdlPFhSv57vO/pAzetY="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Gradient.png",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\wwwroot\\Images\\Gradient.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "503901"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UwA6HmyKTSuXZRAV+a8teNtNTdlPFhSv57vO/pAzetY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 01 Jan 2025 12:21:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UwA6HmyKTSuXZRAV+a8teNtNTdlPFhSv57vO/pAzetY="
+        }
+      ]
+    },
+    {
+      "Route": "Images/inflow.png",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\wwwroot\\Images\\inflow.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "867"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dCJvscKoBE8WR+B3xF6bhX+hCTt9KWcrAqf8Lf71ubY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 01 Jan 2025 14:27:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dCJvscKoBE8WR+B3xF6bhX+hCTt9KWcrAqf8Lf71ubY="
+        }
+      ]
+    },
+    {
+      "Route": "Images/inflow.w1385n02ow.png",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\wwwroot\\Images\\inflow.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "867"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dCJvscKoBE8WR+B3xF6bhX+hCTt9KWcrAqf8Lf71ubY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 01 Jan 2025 14:27:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "w1385n02ow"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/inflow.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dCJvscKoBE8WR+B3xF6bhX+hCTt9KWcrAqf8Lf71ubY="
+        }
+      ]
+    },
+    {
+      "Route": "Images/outflow.ofhh24iwdh.png",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\wwwroot\\Images\\outflow.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "763"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hGTyQ4k4DJQMR9GMP/Up6ibsDYvHBSTWjGbpmquJr7M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 01 Jan 2025 14:27:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ofhh24iwdh"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/outflow.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hGTyQ4k4DJQMR9GMP/Up6ibsDYvHBSTWjGbpmquJr7M="
+        }
+      ]
+    },
+    {
+      "Route": "Images/outflow.png",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\wwwroot\\Images\\outflow.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "763"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hGTyQ4k4DJQMR9GMP/Up6ibsDYvHBSTWjGbpmquJr7M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 01 Jan 2025 14:27:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hGTyQ4k4DJQMR9GMP/Up6ibsDYvHBSTWjGbpmquJr7M="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Vector.c24xp438pi.png",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\wwwroot\\Images\\Vector.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2214"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1AtznXBBzKZQ1kpiexElg5d6hqfgtQSRwQd0poOL1pA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 01 Jan 2025 10:32:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "c24xp438pi"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Vector.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1AtznXBBzKZQ1kpiexElg5d6hqfgtQSRwQd0poOL1pA="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Vector.png",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\wwwroot\\Images\\Vector.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2214"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1AtznXBBzKZQ1kpiexElg5d6hqfgtQSRwQd0poOL1pA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 01 Jan 2025 10:32:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1AtznXBBzKZQ1kpiexElg5d6hqfgtQSRwQd0poOL1pA="
+        }
+      ]
+    },
+    {
       "Route": "index.acw713rakz.html",
       "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\compressed\\eygx7gze13-acw713rakz.gz",
       "Selectors": [
@@ -2454,12 +3072,12 @@
     },
     {
       "Route": "PennyPal.bundle.scp.css",
-      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\compressed\\publish\\s6lxhk16z5-s1n1nkw4b3.br",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\compressed\\publish\\s6lxhk16z5-sun2dmef2w.br",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "br",
-          "Quality": "0.000741289844"
+          "Quality": "0.000454959054"
         }
       ],
       "ResponseHeaders": [
@@ -2469,15 +3087,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1348"
+          "Value": "2197"
         },
         {
           "Name": "ETag",
-          "Value": "\"iLFVnsUCF6Xq62BqNtAMB2YCvcZDK3UqpNu9hVEJQhA=\""
+          "Value": "\"BOuxnVa5dwh9rl9q6vUC/Sf/Ax/NLxffNobnO3eVPAE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 01 Jan 2025 09:49:50 GMT"
+          "Value": "Fri, 03 Jan 2025 12:49:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2497,24 +3115,24 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"8HF1UeueqUwV6WAeoejNltdVRSZrajO+SX+0tLpe4es=\""
+          "Value": "W/\"vDW8Y3F+A7CSFr5LhnHJwPBUoQXfbaf78U7Mr5sHbpQ=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-8HF1UeueqUwV6WAeoejNltdVRSZrajO+SX+0tLpe4es="
+          "Value": "sha256-vDW8Y3F+A7CSFr5LhnHJwPBUoQXfbaf78U7Mr5sHbpQ="
         }
       ]
     },
     {
       "Route": "PennyPal.bundle.scp.css",
-      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\compressed\\s6lxhk16z5-s1n1nkw4b3.gz",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\compressed\\s6lxhk16z5-sun2dmef2w.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000615006150"
+          "Quality": "0.000382555471"
         }
       ],
       "ResponseHeaders": [
@@ -2524,15 +3142,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1625"
+          "Value": "2613"
         },
         {
           "Name": "ETag",
-          "Value": "\"+pULD1qEJ4uvz/aH+Xtmjzee8G6i/EYyDTZK/JkwhNI=\""
+          "Value": "\"mgHiPnlXXjDse2rIHZAiR+VtO2Sxuil6P8DYV6a2OIM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 01 Jan 2025 09:49:50 GMT"
+          "Value": "Fri, 03 Jan 2025 12:49:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2552,13 +3170,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"8HF1UeueqUwV6WAeoejNltdVRSZrajO+SX+0tLpe4es=\""
+          "Value": "W/\"vDW8Y3F+A7CSFr5LhnHJwPBUoQXfbaf78U7Mr5sHbpQ=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-8HF1UeueqUwV6WAeoejNltdVRSZrajO+SX+0tLpe4es="
+          "Value": "sha256-vDW8Y3F+A7CSFr5LhnHJwPBUoQXfbaf78U7Mr5sHbpQ="
         }
       ]
     },
@@ -2573,7 +3191,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5481"
+          "Value": "11131"
         },
         {
           "Name": "Content-Type",
@@ -2581,11 +3199,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"8HF1UeueqUwV6WAeoejNltdVRSZrajO+SX+0tLpe4es=\""
+          "Value": "\"vDW8Y3F+A7CSFr5LhnHJwPBUoQXfbaf78U7Mr5sHbpQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 01 Jan 2025 09:49:50 GMT"
+          "Value": "Fri, 03 Jan 2025 12:49:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2595,13 +3213,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-8HF1UeueqUwV6WAeoejNltdVRSZrajO+SX+0tLpe4es="
+          "Value": "sha256-vDW8Y3F+A7CSFr5LhnHJwPBUoQXfbaf78U7Mr5sHbpQ="
         }
       ]
     },
     {
       "Route": "PennyPal.bundle.scp.css.br",
-      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\compressed\\publish\\s6lxhk16z5-s1n1nkw4b3.br",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\compressed\\publish\\s6lxhk16z5-sun2dmef2w.br",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2610,7 +3228,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1348"
+          "Value": "2197"
         },
         {
           "Name": "Content-Type",
@@ -2618,11 +3236,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"iLFVnsUCF6Xq62BqNtAMB2YCvcZDK3UqpNu9hVEJQhA=\""
+          "Value": "\"BOuxnVa5dwh9rl9q6vUC/Sf/Ax/NLxffNobnO3eVPAE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 01 Jan 2025 09:49:50 GMT"
+          "Value": "Fri, 03 Jan 2025 12:49:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2640,13 +3258,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-iLFVnsUCF6Xq62BqNtAMB2YCvcZDK3UqpNu9hVEJQhA="
+          "Value": "sha256-BOuxnVa5dwh9rl9q6vUC/Sf/Ax/NLxffNobnO3eVPAE="
         }
       ]
     },
     {
       "Route": "PennyPal.bundle.scp.css.gz",
-      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\compressed\\s6lxhk16z5-s1n1nkw4b3.gz",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\compressed\\s6lxhk16z5-sun2dmef2w.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2655,7 +3273,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1625"
+          "Value": "2613"
         },
         {
           "Name": "Content-Type",
@@ -2663,11 +3281,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"+pULD1qEJ4uvz/aH+Xtmjzee8G6i/EYyDTZK/JkwhNI=\""
+          "Value": "\"mgHiPnlXXjDse2rIHZAiR+VtO2Sxuil6P8DYV6a2OIM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 01 Jan 2025 09:49:50 GMT"
+          "Value": "Fri, 03 Jan 2025 12:49:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2685,18 +3303,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-+pULD1qEJ4uvz/aH+Xtmjzee8G6i/EYyDTZK/JkwhNI="
+          "Value": "sha256-mgHiPnlXXjDse2rIHZAiR+VtO2Sxuil6P8DYV6a2OIM="
         }
       ]
     },
     {
-      "Route": "PennyPal.s1n1nkw4b3.bundle.scp.css",
-      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\compressed\\publish\\s6lxhk16z5-s1n1nkw4b3.br",
+      "Route": "PennyPal.styles.css",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\compressed\\i0nxk1d540-sun2dmef2w.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
-          "Value": "br",
-          "Quality": "0.000741289844"
+          "Value": "gzip",
+          "Quality": "0.000382555471"
         }
       ],
       "ResponseHeaders": [
@@ -2706,15 +3324,252 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1348"
+          "Value": "2613"
         },
         {
           "Name": "ETag",
-          "Value": "\"iLFVnsUCF6Xq62BqNtAMB2YCvcZDK3UqpNu9hVEJQhA=\""
+          "Value": "\"mgHiPnlXXjDse2rIHZAiR+VtO2Sxuil6P8DYV6a2OIM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 01 Jan 2025 09:49:50 GMT"
+          "Value": "Fri, 03 Jan 2025 12:49:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"vDW8Y3F+A7CSFr5LhnHJwPBUoQXfbaf78U7Mr5sHbpQ=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vDW8Y3F+A7CSFr5LhnHJwPBUoQXfbaf78U7Mr5sHbpQ="
+        }
+      ]
+    },
+    {
+      "Route": "PennyPal.styles.css",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\compressed\\publish\\i0nxk1d540-sun2dmef2w.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0.000454959054"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2197"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BOuxnVa5dwh9rl9q6vUC/Sf/Ax/NLxffNobnO3eVPAE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 03 Jan 2025 12:49:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"vDW8Y3F+A7CSFr5LhnHJwPBUoQXfbaf78U7Mr5sHbpQ=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vDW8Y3F+A7CSFr5LhnHJwPBUoQXfbaf78U7Mr5sHbpQ="
+        }
+      ]
+    },
+    {
+      "Route": "PennyPal.styles.css",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\scopedcss\\bundle\\PennyPal.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11131"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vDW8Y3F+A7CSFr5LhnHJwPBUoQXfbaf78U7Mr5sHbpQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 03 Jan 2025 12:49:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vDW8Y3F+A7CSFr5LhnHJwPBUoQXfbaf78U7Mr5sHbpQ="
+        }
+      ]
+    },
+    {
+      "Route": "PennyPal.styles.css.br",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\compressed\\publish\\i0nxk1d540-sun2dmef2w.br",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2197"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BOuxnVa5dwh9rl9q6vUC/Sf/Ax/NLxffNobnO3eVPAE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 03 Jan 2025 12:49:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BOuxnVa5dwh9rl9q6vUC/Sf/Ax/NLxffNobnO3eVPAE="
+        }
+      ]
+    },
+    {
+      "Route": "PennyPal.styles.css.gz",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\compressed\\i0nxk1d540-sun2dmef2w.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2613"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mgHiPnlXXjDse2rIHZAiR+VtO2Sxuil6P8DYV6a2OIM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 03 Jan 2025 12:49:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mgHiPnlXXjDse2rIHZAiR+VtO2Sxuil6P8DYV6a2OIM="
+        }
+      ]
+    },
+    {
+      "Route": "PennyPal.sun2dmef2w.bundle.scp.css",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\compressed\\publish\\s6lxhk16z5-sun2dmef2w.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0.000454959054"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2197"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BOuxnVa5dwh9rl9q6vUC/Sf/Ax/NLxffNobnO3eVPAE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 03 Jan 2025 12:49:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2734,13 +3589,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"8HF1UeueqUwV6WAeoejNltdVRSZrajO+SX+0tLpe4es=\""
+          "Value": "W/\"vDW8Y3F+A7CSFr5LhnHJwPBUoQXfbaf78U7Mr5sHbpQ=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "s1n1nkw4b3"
+          "Value": "sun2dmef2w"
         },
         {
           "Name": "label",
@@ -2748,18 +3603,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-8HF1UeueqUwV6WAeoejNltdVRSZrajO+SX+0tLpe4es="
+          "Value": "sha256-vDW8Y3F+A7CSFr5LhnHJwPBUoQXfbaf78U7Mr5sHbpQ="
         }
       ]
     },
     {
-      "Route": "PennyPal.s1n1nkw4b3.bundle.scp.css",
-      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\compressed\\s6lxhk16z5-s1n1nkw4b3.gz",
+      "Route": "PennyPal.sun2dmef2w.bundle.scp.css",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\compressed\\s6lxhk16z5-sun2dmef2w.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000615006150"
+          "Quality": "0.000382555471"
         }
       ],
       "ResponseHeaders": [
@@ -2769,15 +3624,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1625"
+          "Value": "2613"
         },
         {
           "Name": "ETag",
-          "Value": "\"+pULD1qEJ4uvz/aH+Xtmjzee8G6i/EYyDTZK/JkwhNI=\""
+          "Value": "\"mgHiPnlXXjDse2rIHZAiR+VtO2Sxuil6P8DYV6a2OIM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 01 Jan 2025 09:49:50 GMT"
+          "Value": "Fri, 03 Jan 2025 12:49:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2797,13 +3652,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"8HF1UeueqUwV6WAeoejNltdVRSZrajO+SX+0tLpe4es=\""
+          "Value": "W/\"vDW8Y3F+A7CSFr5LhnHJwPBUoQXfbaf78U7Mr5sHbpQ=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "s1n1nkw4b3"
+          "Value": "sun2dmef2w"
         },
         {
           "Name": "label",
@@ -2811,12 +3666,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-8HF1UeueqUwV6WAeoejNltdVRSZrajO+SX+0tLpe4es="
+          "Value": "sha256-vDW8Y3F+A7CSFr5LhnHJwPBUoQXfbaf78U7Mr5sHbpQ="
         }
       ]
     },
     {
-      "Route": "PennyPal.s1n1nkw4b3.bundle.scp.css",
+      "Route": "PennyPal.sun2dmef2w.bundle.scp.css",
       "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\scopedcss\\projectbundle\\PennyPal.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2826,7 +3681,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5481"
+          "Value": "11131"
         },
         {
           "Name": "Content-Type",
@@ -2834,11 +3689,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"8HF1UeueqUwV6WAeoejNltdVRSZrajO+SX+0tLpe4es=\""
+          "Value": "\"vDW8Y3F+A7CSFr5LhnHJwPBUoQXfbaf78U7Mr5sHbpQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 01 Jan 2025 09:49:50 GMT"
+          "Value": "Fri, 03 Jan 2025 12:49:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2848,7 +3703,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "s1n1nkw4b3"
+          "Value": "sun2dmef2w"
         },
         {
           "Name": "label",
@@ -2856,13 +3711,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-8HF1UeueqUwV6WAeoejNltdVRSZrajO+SX+0tLpe4es="
+          "Value": "sha256-vDW8Y3F+A7CSFr5LhnHJwPBUoQXfbaf78U7Mr5sHbpQ="
         }
       ]
     },
     {
-      "Route": "PennyPal.s1n1nkw4b3.bundle.scp.css.br",
-      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\compressed\\publish\\s6lxhk16z5-s1n1nkw4b3.br",
+      "Route": "PennyPal.sun2dmef2w.bundle.scp.css.br",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\compressed\\publish\\s6lxhk16z5-sun2dmef2w.br",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2871,7 +3726,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1348"
+          "Value": "2197"
         },
         {
           "Name": "Content-Type",
@@ -2879,11 +3734,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"iLFVnsUCF6Xq62BqNtAMB2YCvcZDK3UqpNu9hVEJQhA=\""
+          "Value": "\"BOuxnVa5dwh9rl9q6vUC/Sf/Ax/NLxffNobnO3eVPAE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 01 Jan 2025 09:49:50 GMT"
+          "Value": "Fri, 03 Jan 2025 12:49:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2901,7 +3756,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "s1n1nkw4b3"
+          "Value": "sun2dmef2w"
         },
         {
           "Name": "label",
@@ -2909,13 +3764,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-iLFVnsUCF6Xq62BqNtAMB2YCvcZDK3UqpNu9hVEJQhA="
+          "Value": "sha256-BOuxnVa5dwh9rl9q6vUC/Sf/Ax/NLxffNobnO3eVPAE="
         }
       ]
     },
     {
-      "Route": "PennyPal.s1n1nkw4b3.bundle.scp.css.gz",
-      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\compressed\\s6lxhk16z5-s1n1nkw4b3.gz",
+      "Route": "PennyPal.sun2dmef2w.bundle.scp.css.gz",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\compressed\\s6lxhk16z5-sun2dmef2w.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2924,7 +3779,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1625"
+          "Value": "2613"
         },
         {
           "Name": "Content-Type",
@@ -2932,11 +3787,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"+pULD1qEJ4uvz/aH+Xtmjzee8G6i/EYyDTZK/JkwhNI=\""
+          "Value": "\"mgHiPnlXXjDse2rIHZAiR+VtO2Sxuil6P8DYV6a2OIM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 01 Jan 2025 09:49:50 GMT"
+          "Value": "Fri, 03 Jan 2025 12:49:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2954,7 +3809,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "s1n1nkw4b3"
+          "Value": "sun2dmef2w"
         },
         {
           "Name": "label",
@@ -2962,18 +3817,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-+pULD1qEJ4uvz/aH+Xtmjzee8G6i/EYyDTZK/JkwhNI="
+          "Value": "sha256-mgHiPnlXXjDse2rIHZAiR+VtO2Sxuil6P8DYV6a2OIM="
         }
       ]
     },
     {
-      "Route": "PennyPal.s1n1nkw4b3.styles.css",
-      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\compressed\\i0nxk1d540-s1n1nkw4b3.gz",
+      "Route": "PennyPal.sun2dmef2w.styles.css",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\compressed\\i0nxk1d540-sun2dmef2w.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000615006150"
+          "Quality": "0.000382555471"
         }
       ],
       "ResponseHeaders": [
@@ -2983,15 +3838,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1625"
+          "Value": "2613"
         },
         {
           "Name": "ETag",
-          "Value": "\"+pULD1qEJ4uvz/aH+Xtmjzee8G6i/EYyDTZK/JkwhNI=\""
+          "Value": "\"mgHiPnlXXjDse2rIHZAiR+VtO2Sxuil6P8DYV6a2OIM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 01 Jan 2025 09:49:50 GMT"
+          "Value": "Fri, 03 Jan 2025 12:49:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3011,13 +3866,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"8HF1UeueqUwV6WAeoejNltdVRSZrajO+SX+0tLpe4es=\""
+          "Value": "W/\"vDW8Y3F+A7CSFr5LhnHJwPBUoQXfbaf78U7Mr5sHbpQ=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "s1n1nkw4b3"
+          "Value": "sun2dmef2w"
         },
         {
           "Name": "label",
@@ -3025,18 +3880,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-8HF1UeueqUwV6WAeoejNltdVRSZrajO+SX+0tLpe4es="
+          "Value": "sha256-vDW8Y3F+A7CSFr5LhnHJwPBUoQXfbaf78U7Mr5sHbpQ="
         }
       ]
     },
     {
-      "Route": "PennyPal.s1n1nkw4b3.styles.css",
-      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\compressed\\publish\\i0nxk1d540-s1n1nkw4b3.br",
+      "Route": "PennyPal.sun2dmef2w.styles.css",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\compressed\\publish\\i0nxk1d540-sun2dmef2w.br",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "br",
-          "Quality": "0.000741289844"
+          "Quality": "0.000454959054"
         }
       ],
       "ResponseHeaders": [
@@ -3046,15 +3901,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1348"
+          "Value": "2197"
         },
         {
           "Name": "ETag",
-          "Value": "\"iLFVnsUCF6Xq62BqNtAMB2YCvcZDK3UqpNu9hVEJQhA=\""
+          "Value": "\"BOuxnVa5dwh9rl9q6vUC/Sf/Ax/NLxffNobnO3eVPAE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 01 Jan 2025 09:49:50 GMT"
+          "Value": "Fri, 03 Jan 2025 12:49:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3074,13 +3929,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"8HF1UeueqUwV6WAeoejNltdVRSZrajO+SX+0tLpe4es=\""
+          "Value": "W/\"vDW8Y3F+A7CSFr5LhnHJwPBUoQXfbaf78U7Mr5sHbpQ=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "s1n1nkw4b3"
+          "Value": "sun2dmef2w"
         },
         {
           "Name": "label",
@@ -3088,12 +3943,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-8HF1UeueqUwV6WAeoejNltdVRSZrajO+SX+0tLpe4es="
+          "Value": "sha256-vDW8Y3F+A7CSFr5LhnHJwPBUoQXfbaf78U7Mr5sHbpQ="
         }
       ]
     },
     {
-      "Route": "PennyPal.s1n1nkw4b3.styles.css",
+      "Route": "PennyPal.sun2dmef2w.styles.css",
       "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\scopedcss\\bundle\\PennyPal.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3103,7 +3958,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5481"
+          "Value": "11131"
         },
         {
           "Name": "Content-Type",
@@ -3111,11 +3966,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"8HF1UeueqUwV6WAeoejNltdVRSZrajO+SX+0tLpe4es=\""
+          "Value": "\"vDW8Y3F+A7CSFr5LhnHJwPBUoQXfbaf78U7Mr5sHbpQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 01 Jan 2025 09:49:50 GMT"
+          "Value": "Fri, 03 Jan 2025 12:49:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3125,7 +3980,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "s1n1nkw4b3"
+          "Value": "sun2dmef2w"
         },
         {
           "Name": "label",
@@ -3133,13 +3988,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-8HF1UeueqUwV6WAeoejNltdVRSZrajO+SX+0tLpe4es="
+          "Value": "sha256-vDW8Y3F+A7CSFr5LhnHJwPBUoQXfbaf78U7Mr5sHbpQ="
         }
       ]
     },
     {
-      "Route": "PennyPal.s1n1nkw4b3.styles.css.br",
-      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\compressed\\publish\\i0nxk1d540-s1n1nkw4b3.br",
+      "Route": "PennyPal.sun2dmef2w.styles.css.br",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\compressed\\publish\\i0nxk1d540-sun2dmef2w.br",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3148,7 +4003,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1348"
+          "Value": "2197"
         },
         {
           "Name": "Content-Type",
@@ -3156,11 +4011,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"iLFVnsUCF6Xq62BqNtAMB2YCvcZDK3UqpNu9hVEJQhA=\""
+          "Value": "\"BOuxnVa5dwh9rl9q6vUC/Sf/Ax/NLxffNobnO3eVPAE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 01 Jan 2025 09:49:50 GMT"
+          "Value": "Fri, 03 Jan 2025 12:49:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3178,7 +4033,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "s1n1nkw4b3"
+          "Value": "sun2dmef2w"
         },
         {
           "Name": "label",
@@ -3186,13 +4041,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-iLFVnsUCF6Xq62BqNtAMB2YCvcZDK3UqpNu9hVEJQhA="
+          "Value": "sha256-BOuxnVa5dwh9rl9q6vUC/Sf/Ax/NLxffNobnO3eVPAE="
         }
       ]
     },
     {
-      "Route": "PennyPal.s1n1nkw4b3.styles.css.gz",
-      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\compressed\\i0nxk1d540-s1n1nkw4b3.gz",
+      "Route": "PennyPal.sun2dmef2w.styles.css.gz",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\compressed\\i0nxk1d540-sun2dmef2w.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3201,7 +4056,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1625"
+          "Value": "2613"
         },
         {
           "Name": "Content-Type",
@@ -3209,11 +4064,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"+pULD1qEJ4uvz/aH+Xtmjzee8G6i/EYyDTZK/JkwhNI=\""
+          "Value": "\"mgHiPnlXXjDse2rIHZAiR+VtO2Sxuil6P8DYV6a2OIM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 01 Jan 2025 09:49:50 GMT"
+          "Value": "Fri, 03 Jan 2025 12:49:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3231,7 +4086,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "s1n1nkw4b3"
+          "Value": "sun2dmef2w"
         },
         {
           "Name": "label",
@@ -3239,244 +4094,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-+pULD1qEJ4uvz/aH+Xtmjzee8G6i/EYyDTZK/JkwhNI="
-        }
-      ]
-    },
-    {
-      "Route": "PennyPal.styles.css",
-      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\compressed\\i0nxk1d540-s1n1nkw4b3.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000615006150"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1625"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"+pULD1qEJ4uvz/aH+Xtmjzee8G6i/EYyDTZK/JkwhNI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 01 Jan 2025 09:49:50 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"8HF1UeueqUwV6WAeoejNltdVRSZrajO+SX+0tLpe4es=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-8HF1UeueqUwV6WAeoejNltdVRSZrajO+SX+0tLpe4es="
-        }
-      ]
-    },
-    {
-      "Route": "PennyPal.styles.css",
-      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\compressed\\publish\\i0nxk1d540-s1n1nkw4b3.br",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "br",
-          "Quality": "0.000741289844"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1348"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"iLFVnsUCF6Xq62BqNtAMB2YCvcZDK3UqpNu9hVEJQhA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 01 Jan 2025 09:49:50 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "br"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"8HF1UeueqUwV6WAeoejNltdVRSZrajO+SX+0tLpe4es=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-8HF1UeueqUwV6WAeoejNltdVRSZrajO+SX+0tLpe4es="
-        }
-      ]
-    },
-    {
-      "Route": "PennyPal.styles.css",
-      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\scopedcss\\bundle\\PennyPal.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5481"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"8HF1UeueqUwV6WAeoejNltdVRSZrajO+SX+0tLpe4es=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 01 Jan 2025 09:49:50 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-8HF1UeueqUwV6WAeoejNltdVRSZrajO+SX+0tLpe4es="
-        }
-      ]
-    },
-    {
-      "Route": "PennyPal.styles.css.br",
-      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\compressed\\publish\\i0nxk1d540-s1n1nkw4b3.br",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1348"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"iLFVnsUCF6Xq62BqNtAMB2YCvcZDK3UqpNu9hVEJQhA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 01 Jan 2025 09:49:50 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "br"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-iLFVnsUCF6Xq62BqNtAMB2YCvcZDK3UqpNu9hVEJQhA="
-        }
-      ]
-    },
-    {
-      "Route": "PennyPal.styles.css.gz",
-      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-maccatalyst\\maccatalyst-x64\\compressed\\i0nxk1d540-s1n1nkw4b3.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1625"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"+pULD1qEJ4uvz/aH+Xtmjzee8G6i/EYyDTZK/JkwhNI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 01 Jan 2025 09:49:50 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-+pULD1qEJ4uvz/aH+Xtmjzee8G6i/EYyDTZK/JkwhNI="
+          "Value": "sha256-mgHiPnlXXjDse2rIHZAiR+VtO2Sxuil6P8DYV6a2OIM="
         }
       ]
     }
