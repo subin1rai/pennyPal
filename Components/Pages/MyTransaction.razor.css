@@ -1,0 +1,108 @@
+﻿* {
+    padding: 0 ;
+    margin: 0;
+/*    background-color: red;*/
+}
+
+.badge_tag {
+    color: black;
+}
+
+.heading {
+    padding: 16px;
+}
+
+.form-group-new {
+    font-size: 12px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.form-control-top {
+    width: 80px;
+    padding: 8px;
+    border-bottom: 0.25rem;
+}
+
+.filters{
+    display: flex;
+    flex-direction:row;
+    justify-content: end;
+    gap:8px;
+    padding: 0 16px;
+    margin-bottom:12px;
+
+}
+.btn-add {
+    border: none;
+/*    height: 32px;*/
+    color: white;
+    background-color: #1FBF47;
+    padding:8px 28px;
+    border-radius: 8px;
+
+}
+.modal{
+/*    padding:0 16px;*/
+}
+.modal-dialog {
+    padding: 0 16px;
+    margin: 180px auto;
+}
+
+.modal-content{
+    padding: 24px;
+}
+
+.modal-header .close{
+    background-color:white;
+    border: none;
+    font-size:34px;
+}
+
+.form-group{
+
+}
+
+.transaction-list {
+    padding: 0 16px;
+}
+.cards-trans {
+    padding: 8px;
+    background: linear-gradient(to bottom right, #08765A, #33AF4F);
+    margin-bottom: 12px;
+    color:white;
+    border-radius:4px;
+}
+
+.date_head{
+    display:flex;
+    justify-content:space-between;
+}
+
+.transaction-list .amount {
+    font-weight:600;
+}
+
+.description{
+    padding-bottom:8px;
+}
+
+.tags{
+    padding:12px;
+    
+}
+.tags p{
+    padding-bottom: 8px;
+}
+
+    .tags span {
+        padding: 8px 12px;
+        background-color: #1FBF47;
+        border-radius:50%;
+        border-radius:8px;
+        color:white;
+        word-spacing:6px;
+        }

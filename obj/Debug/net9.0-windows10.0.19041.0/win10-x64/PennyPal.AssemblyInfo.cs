@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PennyPal")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+86189241a4c0546001a01fe057e309a0538fa28c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+a8b3711a119136a22a5621d789f9b2d53ef9c8b5")]
 [assembly: System.Reflection.AssemblyProductAttribute("PennyPal")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PennyPal")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

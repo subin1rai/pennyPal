@@ -192,8 +192,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName>ScopedCss</AssetTraitName>
       <AssetTraitValue>ApplicationBundle</AssetTraitValue>
-      <Fingerprint>sun2dmef2w</Fingerprint>
-      <Integrity>vDW8Y3F+A7CSFr5LhnHJwPBUoQXfbaf78U7Mr5sHbpQ=</Integrity>
+      <Fingerprint>wtchovh2e2</Fingerprint>
+      <Integrity>zCCgK54OHFvQiylLHHRwU8hOsKeiGGDLvjuiNQiLGmk=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PennyPal.styles.css'))</OriginalItemSpec>
