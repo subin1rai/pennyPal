@@ -1,6 +1,7 @@
 ﻿@page "/debt"
 @using PennyPal.Model
 @inject UserService UserService
+@inject LoginSession LoginSession
 
 <h1>User Debts</h1>
 
@@ -15,14 +16,11 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var debt in Data.Debts.Where(d => d.UserId == loggedInUserId))
+        @foreach (var debt in Data.Debts)
         {
             <tr>
                 <td>@debt.Id</td>
-                <td>
-                    @(Data.Debts.Where(d => d.UserId == loggedInUserId).Sum(d => d.Amount) -
-                        Data.Debts.Where(d => d.UserId == loggedInUserId).Sum(d => d.PaidAmount))
-                </td>
+                <td>@debt.Amount</td>
                 <td>@debt.PaidAmount</td>
                 <td>@debt.Date.ToString("MM/dd/yyyy")</td>
                 <td>@debt.Description</td>
@@ -31,65 +29,120 @@
     </tbody>
 </table>
 
-<h2>Add New Debt</h2>
-<EditForm Model="newDebt" OnValidSubmit="HandleDebtSubmit">
-    <DataAnnotationsValidator />
-    <ValidationSummary />
+<button class="btn btn-primary" @onclick="OpenModal">Add New Debt</button>
+@if (isModalOpen)
+{
+    <div class="modal show d-block" tabindex="-1" style="background-color: rgba(0, 0, 0, 0.5); display: flex; align-items: center; justify-content: center;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add New Debt</h5>
+                    <button type="button" class="btn-close" @onclick="CloseModal"></button>
+                </div>
+                <div class="modal-body">
+                    <EditForm Model="newDebt" OnValidSubmit="HandleDebtSubmit">
+                        <DataAnnotationsValidator />
+                        <ValidationSummary />
 
-    <div class="form-group">
-        <label for="amount">Debt Amount</label>
-        <InputNumber id="amount" @bind-Value="newDebt.Amount" class="form-control" />
-    </div>
+                        <div class="form-group">
+                            <label for="amount">Debt Amount</label>
+                            <InputNumber id="amount" @bind-Value="newDebt.Amount" class="form-control" @oninput="DisablePaidAmount" />
+                        </div>
 
-    <div class="form-group">
-        <label for="paidAmount">Paid Amount</label>
-        <InputNumber id="paidAmount" @bind-Value="newDebt.PaidAmount" class="form-control" />
-    </div>
+                        <div class="form-group">
+                            <label for="paidAmount">Paid Amount</label>
+                            <InputNumber id="paidAmount" @bind-Value="newDebt.PaidAmount" class="form-control" @oninput="DisableDebtAmount" />
+                        </div>
 
-    <div class="form-group">
-        <label for="description">Description</label>
-        <InputText id="description" @bind-Value="newDebt.Description" class="form-control" />
-    </div>
+                        <div class="form-group">
+                            <label for="description">Description</label>
+                            <InputText id="description" @bind-Value="newDebt.Description" class="form-control" />
+                        </div>
 
-    <div class="form-group">
-        <button type="submit" class="btn btn-primary">Add Debt</button>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Save</button>
+                        </div>
+                    </EditForm>
+                </div>
+            </div>
+        </div>
     </div>
-</EditForm>
+}
+
 
 @code {
     private User Data;
     private Debts newDebt = new Debts();
-    private int loggedInUserId = 1; // Simulating logged-in user ID, replace with dynamic value
+    private bool isModalOpen = false;
 
     protected override void OnInitialized()
     {
-        Data = UserService.LoadData();
+        // Load the logged-in user's data
+        Data = UserService.LoadUsers().FirstOrDefault(u => u.Userid == LoginSession.LoggedInUser.Userid);
     }
 
     private void HandleDebtSubmit()
+{
+    // Add the new debt
+    newDebt.Id = Data.Debts.Count + 1;
+    newDebt.Date = DateTime.Now;
+    Data.Debts.Add(newDebt);
+
+    if (newDebt.PaidAmount > 0)
     {
-        // Add the new debt to the debts list
-        newDebt.Id = Data.Debts.Count + 1;
-        newDebt.Date = DateTime.Now;
-        newDebt.UserId = loggedInUserId; // Associate debt with the logged-in user
-        Data.Debts.Add(newDebt);
-
-        // Create a corresponding transaction for the debt
+     
+        // Update the main balance in the transaction (reduce the debt by the paid amount)
+        var reduceDebtTransaction = new Transactions
+        {
+            Id = Data.Transactions.Count + 1,
+            Credit = 0,  // No credit for reducing debt
+            Debit = newDebt.PaidAmount,  // Reduce the debt by the paid amount
+            Date = newDebt.Date,
+            Description = $"Debt Paid: {newDebt.Description}",
+            Tags = new List<Tag> { new Tag { tagName = "Debt" } }
+        };
+        Data.Transactions.Add(reduceDebtTransaction);
+    }
+    else if (newDebt.Amount > 0)
+    {
+        // Add a corresponding transaction for the debt amount (increase debt)
         var newTransaction = new Transactions
-            {
-                Id = Data.Transactions.Count + 1,
-                UserId = loggedInUserId, // Associate transaction with the logged-in user
-                Credit = newDebt.Amount, // Record the total debt amount as a Debit transaction
-                Debit = 0,
-                Date = newDebt.Date,
-                Description = $"Debt Added: {newDebt.Description}"
-            };
+        {
+            Id = Data.Transactions.Count + 1,
+            Credit = newDebt.Amount,  // No credit for adding debt
+            Debit = 0,  // Increase the debt
+            Date = newDebt.Date,
+            Description = $"Debt Added: {newDebt.Description}",
+            Tags = new List<Tag> { new Tag { tagName = "Debt" } }
+        };
         Data.Transactions.Add(newTransaction);
+    }
 
-        // Save the updated data
-        UserService.SaveUsers(Data);
+    // Save the updated user data
+    UserService.SaveUsers(new List<User> { Data });
 
-        // Reset the form
-        newDebt = new Debts();
+    // Reset the form
+    newDebt = new Debts();
+}
+
+
+    private void OpenModal()
+    {
+        isModalOpen = true;
+    }
+
+    private void CloseModal()
+    {
+        isModalOpen = false;
+    }
+
+    private void DisablePaidAmount(ChangeEventArgs e)
+    {
+        newDebt.PaidAmount = 0; // Clear PaidAmount if Debt Amount is being entered
+    }
+
+    private void DisableDebtAmount(ChangeEventArgs e)
+    {
+        newDebt.Amount = 0; // Clear Debt Amount if PaidAmount is being entered
     }
 }
