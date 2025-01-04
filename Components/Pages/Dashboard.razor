@@ -47,15 +47,36 @@
             </div>
         </div>
 
-        <h1>Records</h1>
-        <div>
-            <p>Cash In: @TotalCredits</p>
-            <p>Cash Out: @TotalDebits</p>
-            <p>Total Debts: @TotalDebts</p>
-            <p>Cleared Debts: @ClearedDebts</p>
-            <p>Cleared Debts: @RemainingDebt</p>
+        <h1 class="record">Records</h1>
+        <div class="card-blog">
+            <div class="cash-summary">
+                <div class="cash">
+                    <p>Cash In</p>
+                    <p>@TotalCredits</p>
+                </div>
+                <div class="cash">
+                    <p>Cash Out</p>
+                    <p>@TotalDebits</p>
+                </div>
+            </div>
+            <div class="debt-summary">
+                <div class="cash">
+                    <p>Cleared Debts</p>
+                    <p>@ClearedDebts</p>
+                </div>
+                <div class="cash">
+                    <p>Remaining Debts</p>
+                    <p>@RemainingDebt</p>
+                </div>
+            </div>
         </div>
+            <div class="total-debts">
+                <p>Total Debts</p>
+                <p>@TotalDebts</p>
+            </div>
 
+
+    <div class="high">
         <h1>Transaction</h1>
 
         <h3>Top 5 Highest Transactions</h3>
@@ -139,7 +160,9 @@
                 }
             </tbody>
         </table>
+    </div>
 
+    <div class="pending">
         <h3>Pending Debts</h3>
         <table border="1" style="border-collapse: collapse; width: 100%;">
             <thead>
@@ -176,10 +199,9 @@
                 }
             </tbody>
         </table>
-
-
-        
+        </div>
     </div>
+
 </div>
 @code {
     private User Data;

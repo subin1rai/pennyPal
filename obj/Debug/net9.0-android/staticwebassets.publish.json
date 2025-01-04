@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "w+WTJBU6BYKhOvf+iAh0mqVTSaekow2VGX7ZtccMV7U=",
+  "Hash": "75rswIia8Ep2usdYC/8DdmIci7Gl9s7JwaHj7QvsiVA=",
   "Source": "PennyPal",
   "BasePath": "/",
   "Mode": "Root",
@@ -80,12 +80,12 @@
       "OriginalItemSpec": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\wwwroot\\index.html"
     },
     {
-      "Identity": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\compressed\\i0nxk1d540-gt2pxm9eph.gz",
+      "Identity": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\compressed\\i0nxk1d540-xwvp45ddnm.gz",
       "SourceId": "PennyPal",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "PennyPal#[.{fingerprint=gt2pxm9eph}]?.styles.css.gz",
+      "RelativePath": "PennyPal#[.{fingerprint=xwvp45ddnm}]?.styles.css.gz",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Alternative",
@@ -94,8 +94,8 @@
       "RelatedAsset": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\PennyPal.styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "66dqiaxd8z",
-      "Integrity": "Ls/Ym+mhbDQ9ytNOwavCIVJ2yGyYv2MAG4lktUVHW9g=",
+      "Fingerprint": "tpz5xwwj5o",
+      "Integrity": "EUWcF0CgWBVk/OxXOrQIB7NMWLc/raCZNN7IbCG22zM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\PennyPal.styles.css"
@@ -164,12 +164,12 @@
       "OriginalItemSpec": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\wwwroot\\index.html"
     },
     {
-      "Identity": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\compressed\\publish\\i0nxk1d540-gt2pxm9eph.br",
+      "Identity": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\compressed\\publish\\i0nxk1d540-xwvp45ddnm.br",
       "SourceId": "PennyPal",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\compressed\\publish\\",
       "BasePath": "/",
-      "RelativePath": "PennyPal#[.{fingerprint=gt2pxm9eph}]?.styles.css.br",
+      "RelativePath": "PennyPal#[.{fingerprint=xwvp45ddnm}]?.styles.css.br",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Alternative",
@@ -178,8 +178,8 @@
       "RelatedAsset": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\PennyPal.styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "br",
-      "Fingerprint": "y2w3qlbh49",
-      "Integrity": "KoNsmUO0lLoS/89wVe13FkLX2GcJI5BuSQO2YIFEeNQ=",
+      "Fingerprint": "tipkhqcwt4",
+      "Integrity": "yyivCnfAmo2uY8zkmvuVJyyPPuDYLJMvuvJY/AvHhcs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\PennyPal.styles.css"
@@ -206,12 +206,12 @@
       "OriginalItemSpec": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\compressed\\publish\\s6lxhk16z5-gt2pxm9eph.br",
+      "Identity": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\compressed\\publish\\s6lxhk16z5-xwvp45ddnm.br",
       "SourceId": "PennyPal",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\compressed\\publish\\",
       "BasePath": "/",
-      "RelativePath": "PennyPal#[.{fingerprint=gt2pxm9eph}]!.bundle.scp.css.br",
+      "RelativePath": "PennyPal#[.{fingerprint=xwvp45ddnm}]!.bundle.scp.css.br",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Alternative",
@@ -220,8 +220,8 @@
       "RelatedAsset": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\scopedcss\\projectbundle\\PennyPal.bundle.scp.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "br",
-      "Fingerprint": "y2w3qlbh49",
-      "Integrity": "KoNsmUO0lLoS/89wVe13FkLX2GcJI5BuSQO2YIFEeNQ=",
+      "Fingerprint": "tipkhqcwt4",
+      "Integrity": "yyivCnfAmo2uY8zkmvuVJyyPPuDYLJMvuvJY/AvHhcs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\scopedcss\\projectbundle\\PennyPal.bundle.scp.css"
@@ -248,12 +248,12 @@
       "OriginalItemSpec": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\compressed\\s6lxhk16z5-gt2pxm9eph.gz",
+      "Identity": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\compressed\\s6lxhk16z5-xwvp45ddnm.gz",
       "SourceId": "PennyPal",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "PennyPal#[.{fingerprint=gt2pxm9eph}]!.bundle.scp.css.gz",
+      "RelativePath": "PennyPal#[.{fingerprint=xwvp45ddnm}]!.bundle.scp.css.gz",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Alternative",
@@ -262,8 +262,8 @@
       "RelatedAsset": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\scopedcss\\projectbundle\\PennyPal.bundle.scp.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "66dqiaxd8z",
-      "Integrity": "Ls/Ym+mhbDQ9ytNOwavCIVJ2yGyYv2MAG4lktUVHW9g=",
+      "Fingerprint": "tpz5xwwj5o",
+      "Integrity": "EUWcF0CgWBVk/OxXOrQIB7NMWLc/raCZNN7IbCG22zM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\scopedcss\\projectbundle\\PennyPal.bundle.scp.css"
@@ -283,8 +283,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "gt2pxm9eph",
-      "Integrity": "fDzawdZMuse2k4ghrEiQSES9+rcSfYJUXOIt5AIJkFg=",
+      "Fingerprint": "xwvp45ddnm",
+      "Integrity": "L8r1ufipPKPsi9usxPQkGhutqT7NGvmoqSDL4P5rCQM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\PennyPal.styles.css"
@@ -304,8 +304,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "gt2pxm9eph",
-      "Integrity": "fDzawdZMuse2k4ghrEiQSES9+rcSfYJUXOIt5AIJkFg=",
+      "Fingerprint": "xwvp45ddnm",
+      "Integrity": "L8r1ufipPKPsi9usxPQkGhutqT7NGvmoqSDL4P5rCQM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\scopedcss\\projectbundle\\PennyPal.bundle.scp.css"
@@ -3072,12 +3072,12 @@
     },
     {
       "Route": "PennyPal.bundle.scp.css",
-      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\compressed\\publish\\s6lxhk16z5-gt2pxm9eph.br",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\compressed\\publish\\s6lxhk16z5-xwvp45ddnm.br",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "br",
-          "Quality": "0.000346740638"
+          "Quality": "0.000333222259"
         }
       ],
       "ResponseHeaders": [
@@ -3087,15 +3087,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2883"
+          "Value": "3000"
         },
         {
           "Name": "ETag",
-          "Value": "\"KoNsmUO0lLoS/89wVe13FkLX2GcJI5BuSQO2YIFEeNQ=\""
+          "Value": "\"yyivCnfAmo2uY8zkmvuVJyyPPuDYLJMvuvJY/AvHhcs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 04 Jan 2025 12:50:39 GMT"
+          "Value": "Sat, 04 Jan 2025 18:09:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3115,24 +3115,24 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"fDzawdZMuse2k4ghrEiQSES9+rcSfYJUXOIt5AIJkFg=\""
+          "Value": "W/\"L8r1ufipPKPsi9usxPQkGhutqT7NGvmoqSDL4P5rCQM=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-fDzawdZMuse2k4ghrEiQSES9+rcSfYJUXOIt5AIJkFg="
+          "Value": "sha256-L8r1ufipPKPsi9usxPQkGhutqT7NGvmoqSDL4P5rCQM="
         }
       ]
     },
     {
       "Route": "PennyPal.bundle.scp.css",
-      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\compressed\\s6lxhk16z5-gt2pxm9eph.gz",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\compressed\\s6lxhk16z5-xwvp45ddnm.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000291545190"
+          "Quality": "0.000279955207"
         }
       ],
       "ResponseHeaders": [
@@ -3142,15 +3142,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3429"
+          "Value": "3571"
         },
         {
           "Name": "ETag",
-          "Value": "\"Ls/Ym+mhbDQ9ytNOwavCIVJ2yGyYv2MAG4lktUVHW9g=\""
+          "Value": "\"EUWcF0CgWBVk/OxXOrQIB7NMWLc/raCZNN7IbCG22zM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 04 Jan 2025 12:50:39 GMT"
+          "Value": "Sat, 04 Jan 2025 18:09:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3170,13 +3170,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"fDzawdZMuse2k4ghrEiQSES9+rcSfYJUXOIt5AIJkFg=\""
+          "Value": "W/\"L8r1ufipPKPsi9usxPQkGhutqT7NGvmoqSDL4P5rCQM=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-fDzawdZMuse2k4ghrEiQSES9+rcSfYJUXOIt5AIJkFg="
+          "Value": "sha256-L8r1ufipPKPsi9usxPQkGhutqT7NGvmoqSDL4P5rCQM="
         }
       ]
     },
@@ -3191,7 +3191,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "16685"
+          "Value": "17635"
         },
         {
           "Name": "Content-Type",
@@ -3199,11 +3199,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"fDzawdZMuse2k4ghrEiQSES9+rcSfYJUXOIt5AIJkFg=\""
+          "Value": "\"L8r1ufipPKPsi9usxPQkGhutqT7NGvmoqSDL4P5rCQM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 04 Jan 2025 12:50:39 GMT"
+          "Value": "Sat, 04 Jan 2025 18:09:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3213,13 +3213,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-fDzawdZMuse2k4ghrEiQSES9+rcSfYJUXOIt5AIJkFg="
+          "Value": "sha256-L8r1ufipPKPsi9usxPQkGhutqT7NGvmoqSDL4P5rCQM="
         }
       ]
     },
     {
       "Route": "PennyPal.bundle.scp.css.br",
-      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\compressed\\publish\\s6lxhk16z5-gt2pxm9eph.br",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\compressed\\publish\\s6lxhk16z5-xwvp45ddnm.br",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3228,7 +3228,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2883"
+          "Value": "3000"
         },
         {
           "Name": "Content-Type",
@@ -3236,11 +3236,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"KoNsmUO0lLoS/89wVe13FkLX2GcJI5BuSQO2YIFEeNQ=\""
+          "Value": "\"yyivCnfAmo2uY8zkmvuVJyyPPuDYLJMvuvJY/AvHhcs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 04 Jan 2025 12:50:39 GMT"
+          "Value": "Sat, 04 Jan 2025 18:09:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3258,13 +3258,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-KoNsmUO0lLoS/89wVe13FkLX2GcJI5BuSQO2YIFEeNQ="
+          "Value": "sha256-yyivCnfAmo2uY8zkmvuVJyyPPuDYLJMvuvJY/AvHhcs="
         }
       ]
     },
     {
       "Route": "PennyPal.bundle.scp.css.gz",
-      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\compressed\\s6lxhk16z5-gt2pxm9eph.gz",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\compressed\\s6lxhk16z5-xwvp45ddnm.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3273,7 +3273,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3429"
+          "Value": "3571"
         },
         {
           "Name": "Content-Type",
@@ -3281,11 +3281,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Ls/Ym+mhbDQ9ytNOwavCIVJ2yGyYv2MAG4lktUVHW9g=\""
+          "Value": "\"EUWcF0CgWBVk/OxXOrQIB7NMWLc/raCZNN7IbCG22zM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 04 Jan 2025 12:50:39 GMT"
+          "Value": "Sat, 04 Jan 2025 18:09:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3303,18 +3303,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Ls/Ym+mhbDQ9ytNOwavCIVJ2yGyYv2MAG4lktUVHW9g="
+          "Value": "sha256-EUWcF0CgWBVk/OxXOrQIB7NMWLc/raCZNN7IbCG22zM="
         }
       ]
     },
     {
-      "Route": "PennyPal.gt2pxm9eph.bundle.scp.css",
-      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\compressed\\publish\\s6lxhk16z5-gt2pxm9eph.br",
+      "Route": "PennyPal.styles.css",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\compressed\\i0nxk1d540-xwvp45ddnm.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
-          "Value": "br",
-          "Quality": "0.000346740638"
+          "Value": "gzip",
+          "Quality": "0.000279955207"
         }
       ],
       "ResponseHeaders": [
@@ -3324,15 +3324,252 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2883"
+          "Value": "3571"
         },
         {
           "Name": "ETag",
-          "Value": "\"KoNsmUO0lLoS/89wVe13FkLX2GcJI5BuSQO2YIFEeNQ=\""
+          "Value": "\"EUWcF0CgWBVk/OxXOrQIB7NMWLc/raCZNN7IbCG22zM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 04 Jan 2025 12:50:39 GMT"
+          "Value": "Sat, 04 Jan 2025 18:09:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"L8r1ufipPKPsi9usxPQkGhutqT7NGvmoqSDL4P5rCQM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-L8r1ufipPKPsi9usxPQkGhutqT7NGvmoqSDL4P5rCQM="
+        }
+      ]
+    },
+    {
+      "Route": "PennyPal.styles.css",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\compressed\\publish\\i0nxk1d540-xwvp45ddnm.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0.000333222259"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3000"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yyivCnfAmo2uY8zkmvuVJyyPPuDYLJMvuvJY/AvHhcs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 04 Jan 2025 18:09:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"L8r1ufipPKPsi9usxPQkGhutqT7NGvmoqSDL4P5rCQM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-L8r1ufipPKPsi9usxPQkGhutqT7NGvmoqSDL4P5rCQM="
+        }
+      ]
+    },
+    {
+      "Route": "PennyPal.styles.css",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\PennyPal.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17635"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"L8r1ufipPKPsi9usxPQkGhutqT7NGvmoqSDL4P5rCQM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 04 Jan 2025 18:09:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-L8r1ufipPKPsi9usxPQkGhutqT7NGvmoqSDL4P5rCQM="
+        }
+      ]
+    },
+    {
+      "Route": "PennyPal.styles.css.br",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\compressed\\publish\\i0nxk1d540-xwvp45ddnm.br",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3000"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yyivCnfAmo2uY8zkmvuVJyyPPuDYLJMvuvJY/AvHhcs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 04 Jan 2025 18:09:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yyivCnfAmo2uY8zkmvuVJyyPPuDYLJMvuvJY/AvHhcs="
+        }
+      ]
+    },
+    {
+      "Route": "PennyPal.styles.css.gz",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\compressed\\i0nxk1d540-xwvp45ddnm.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3571"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EUWcF0CgWBVk/OxXOrQIB7NMWLc/raCZNN7IbCG22zM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 04 Jan 2025 18:09:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EUWcF0CgWBVk/OxXOrQIB7NMWLc/raCZNN7IbCG22zM="
+        }
+      ]
+    },
+    {
+      "Route": "PennyPal.xwvp45ddnm.bundle.scp.css",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\compressed\\publish\\s6lxhk16z5-xwvp45ddnm.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0.000333222259"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3000"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yyivCnfAmo2uY8zkmvuVJyyPPuDYLJMvuvJY/AvHhcs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 04 Jan 2025 18:09:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3352,13 +3589,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"fDzawdZMuse2k4ghrEiQSES9+rcSfYJUXOIt5AIJkFg=\""
+          "Value": "W/\"L8r1ufipPKPsi9usxPQkGhutqT7NGvmoqSDL4P5rCQM=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "gt2pxm9eph"
+          "Value": "xwvp45ddnm"
         },
         {
           "Name": "label",
@@ -3366,18 +3603,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-fDzawdZMuse2k4ghrEiQSES9+rcSfYJUXOIt5AIJkFg="
+          "Value": "sha256-L8r1ufipPKPsi9usxPQkGhutqT7NGvmoqSDL4P5rCQM="
         }
       ]
     },
     {
-      "Route": "PennyPal.gt2pxm9eph.bundle.scp.css",
-      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\compressed\\s6lxhk16z5-gt2pxm9eph.gz",
+      "Route": "PennyPal.xwvp45ddnm.bundle.scp.css",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\compressed\\s6lxhk16z5-xwvp45ddnm.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000291545190"
+          "Quality": "0.000279955207"
         }
       ],
       "ResponseHeaders": [
@@ -3387,15 +3624,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3429"
+          "Value": "3571"
         },
         {
           "Name": "ETag",
-          "Value": "\"Ls/Ym+mhbDQ9ytNOwavCIVJ2yGyYv2MAG4lktUVHW9g=\""
+          "Value": "\"EUWcF0CgWBVk/OxXOrQIB7NMWLc/raCZNN7IbCG22zM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 04 Jan 2025 12:50:39 GMT"
+          "Value": "Sat, 04 Jan 2025 18:09:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3415,13 +3652,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"fDzawdZMuse2k4ghrEiQSES9+rcSfYJUXOIt5AIJkFg=\""
+          "Value": "W/\"L8r1ufipPKPsi9usxPQkGhutqT7NGvmoqSDL4P5rCQM=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "gt2pxm9eph"
+          "Value": "xwvp45ddnm"
         },
         {
           "Name": "label",
@@ -3429,12 +3666,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-fDzawdZMuse2k4ghrEiQSES9+rcSfYJUXOIt5AIJkFg="
+          "Value": "sha256-L8r1ufipPKPsi9usxPQkGhutqT7NGvmoqSDL4P5rCQM="
         }
       ]
     },
     {
-      "Route": "PennyPal.gt2pxm9eph.bundle.scp.css",
+      "Route": "PennyPal.xwvp45ddnm.bundle.scp.css",
       "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\scopedcss\\projectbundle\\PennyPal.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3444,7 +3681,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "16685"
+          "Value": "17635"
         },
         {
           "Name": "Content-Type",
@@ -3452,11 +3689,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"fDzawdZMuse2k4ghrEiQSES9+rcSfYJUXOIt5AIJkFg=\""
+          "Value": "\"L8r1ufipPKPsi9usxPQkGhutqT7NGvmoqSDL4P5rCQM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 04 Jan 2025 12:50:39 GMT"
+          "Value": "Sat, 04 Jan 2025 18:09:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3466,7 +3703,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "gt2pxm9eph"
+          "Value": "xwvp45ddnm"
         },
         {
           "Name": "label",
@@ -3474,13 +3711,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-fDzawdZMuse2k4ghrEiQSES9+rcSfYJUXOIt5AIJkFg="
+          "Value": "sha256-L8r1ufipPKPsi9usxPQkGhutqT7NGvmoqSDL4P5rCQM="
         }
       ]
     },
     {
-      "Route": "PennyPal.gt2pxm9eph.bundle.scp.css.br",
-      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\compressed\\publish\\s6lxhk16z5-gt2pxm9eph.br",
+      "Route": "PennyPal.xwvp45ddnm.bundle.scp.css.br",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\compressed\\publish\\s6lxhk16z5-xwvp45ddnm.br",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3489,7 +3726,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2883"
+          "Value": "3000"
         },
         {
           "Name": "Content-Type",
@@ -3497,11 +3734,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"KoNsmUO0lLoS/89wVe13FkLX2GcJI5BuSQO2YIFEeNQ=\""
+          "Value": "\"yyivCnfAmo2uY8zkmvuVJyyPPuDYLJMvuvJY/AvHhcs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 04 Jan 2025 12:50:39 GMT"
+          "Value": "Sat, 04 Jan 2025 18:09:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3519,7 +3756,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "gt2pxm9eph"
+          "Value": "xwvp45ddnm"
         },
         {
           "Name": "label",
@@ -3527,13 +3764,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-KoNsmUO0lLoS/89wVe13FkLX2GcJI5BuSQO2YIFEeNQ="
+          "Value": "sha256-yyivCnfAmo2uY8zkmvuVJyyPPuDYLJMvuvJY/AvHhcs="
         }
       ]
     },
     {
-      "Route": "PennyPal.gt2pxm9eph.bundle.scp.css.gz",
-      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\compressed\\s6lxhk16z5-gt2pxm9eph.gz",
+      "Route": "PennyPal.xwvp45ddnm.bundle.scp.css.gz",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\compressed\\s6lxhk16z5-xwvp45ddnm.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3542,7 +3779,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3429"
+          "Value": "3571"
         },
         {
           "Name": "Content-Type",
@@ -3550,11 +3787,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Ls/Ym+mhbDQ9ytNOwavCIVJ2yGyYv2MAG4lktUVHW9g=\""
+          "Value": "\"EUWcF0CgWBVk/OxXOrQIB7NMWLc/raCZNN7IbCG22zM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 04 Jan 2025 12:50:39 GMT"
+          "Value": "Sat, 04 Jan 2025 18:09:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3572,7 +3809,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "gt2pxm9eph"
+          "Value": "xwvp45ddnm"
         },
         {
           "Name": "label",
@@ -3580,18 +3817,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Ls/Ym+mhbDQ9ytNOwavCIVJ2yGyYv2MAG4lktUVHW9g="
+          "Value": "sha256-EUWcF0CgWBVk/OxXOrQIB7NMWLc/raCZNN7IbCG22zM="
         }
       ]
     },
     {
-      "Route": "PennyPal.gt2pxm9eph.styles.css",
-      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\compressed\\i0nxk1d540-gt2pxm9eph.gz",
+      "Route": "PennyPal.xwvp45ddnm.styles.css",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\compressed\\i0nxk1d540-xwvp45ddnm.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000291545190"
+          "Quality": "0.000279955207"
         }
       ],
       "ResponseHeaders": [
@@ -3601,15 +3838,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3429"
+          "Value": "3571"
         },
         {
           "Name": "ETag",
-          "Value": "\"Ls/Ym+mhbDQ9ytNOwavCIVJ2yGyYv2MAG4lktUVHW9g=\""
+          "Value": "\"EUWcF0CgWBVk/OxXOrQIB7NMWLc/raCZNN7IbCG22zM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 04 Jan 2025 12:50:39 GMT"
+          "Value": "Sat, 04 Jan 2025 18:09:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3629,13 +3866,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"fDzawdZMuse2k4ghrEiQSES9+rcSfYJUXOIt5AIJkFg=\""
+          "Value": "W/\"L8r1ufipPKPsi9usxPQkGhutqT7NGvmoqSDL4P5rCQM=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "gt2pxm9eph"
+          "Value": "xwvp45ddnm"
         },
         {
           "Name": "label",
@@ -3643,18 +3880,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-fDzawdZMuse2k4ghrEiQSES9+rcSfYJUXOIt5AIJkFg="
+          "Value": "sha256-L8r1ufipPKPsi9usxPQkGhutqT7NGvmoqSDL4P5rCQM="
         }
       ]
     },
     {
-      "Route": "PennyPal.gt2pxm9eph.styles.css",
-      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\compressed\\publish\\i0nxk1d540-gt2pxm9eph.br",
+      "Route": "PennyPal.xwvp45ddnm.styles.css",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\compressed\\publish\\i0nxk1d540-xwvp45ddnm.br",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "br",
-          "Quality": "0.000346740638"
+          "Quality": "0.000333222259"
         }
       ],
       "ResponseHeaders": [
@@ -3664,15 +3901,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2883"
+          "Value": "3000"
         },
         {
           "Name": "ETag",
-          "Value": "\"KoNsmUO0lLoS/89wVe13FkLX2GcJI5BuSQO2YIFEeNQ=\""
+          "Value": "\"yyivCnfAmo2uY8zkmvuVJyyPPuDYLJMvuvJY/AvHhcs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 04 Jan 2025 12:50:39 GMT"
+          "Value": "Sat, 04 Jan 2025 18:09:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3692,13 +3929,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"fDzawdZMuse2k4ghrEiQSES9+rcSfYJUXOIt5AIJkFg=\""
+          "Value": "W/\"L8r1ufipPKPsi9usxPQkGhutqT7NGvmoqSDL4P5rCQM=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "gt2pxm9eph"
+          "Value": "xwvp45ddnm"
         },
         {
           "Name": "label",
@@ -3706,12 +3943,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-fDzawdZMuse2k4ghrEiQSES9+rcSfYJUXOIt5AIJkFg="
+          "Value": "sha256-L8r1ufipPKPsi9usxPQkGhutqT7NGvmoqSDL4P5rCQM="
         }
       ]
     },
     {
-      "Route": "PennyPal.gt2pxm9eph.styles.css",
+      "Route": "PennyPal.xwvp45ddnm.styles.css",
       "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\PennyPal.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3721,7 +3958,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "16685"
+          "Value": "17635"
         },
         {
           "Name": "Content-Type",
@@ -3729,11 +3966,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"fDzawdZMuse2k4ghrEiQSES9+rcSfYJUXOIt5AIJkFg=\""
+          "Value": "\"L8r1ufipPKPsi9usxPQkGhutqT7NGvmoqSDL4P5rCQM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 04 Jan 2025 12:50:39 GMT"
+          "Value": "Sat, 04 Jan 2025 18:09:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3743,7 +3980,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "gt2pxm9eph"
+          "Value": "xwvp45ddnm"
         },
         {
           "Name": "label",
@@ -3751,13 +3988,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-fDzawdZMuse2k4ghrEiQSES9+rcSfYJUXOIt5AIJkFg="
+          "Value": "sha256-L8r1ufipPKPsi9usxPQkGhutqT7NGvmoqSDL4P5rCQM="
         }
       ]
     },
     {
-      "Route": "PennyPal.gt2pxm9eph.styles.css.br",
-      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\compressed\\publish\\i0nxk1d540-gt2pxm9eph.br",
+      "Route": "PennyPal.xwvp45ddnm.styles.css.br",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\compressed\\publish\\i0nxk1d540-xwvp45ddnm.br",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3766,7 +4003,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2883"
+          "Value": "3000"
         },
         {
           "Name": "Content-Type",
@@ -3774,11 +4011,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"KoNsmUO0lLoS/89wVe13FkLX2GcJI5BuSQO2YIFEeNQ=\""
+          "Value": "\"yyivCnfAmo2uY8zkmvuVJyyPPuDYLJMvuvJY/AvHhcs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 04 Jan 2025 12:50:39 GMT"
+          "Value": "Sat, 04 Jan 2025 18:09:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3796,7 +4033,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "gt2pxm9eph"
+          "Value": "xwvp45ddnm"
         },
         {
           "Name": "label",
@@ -3804,13 +4041,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-KoNsmUO0lLoS/89wVe13FkLX2GcJI5BuSQO2YIFEeNQ="
+          "Value": "sha256-yyivCnfAmo2uY8zkmvuVJyyPPuDYLJMvuvJY/AvHhcs="
         }
       ]
     },
     {
-      "Route": "PennyPal.gt2pxm9eph.styles.css.gz",
-      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\compressed\\i0nxk1d540-gt2pxm9eph.gz",
+      "Route": "PennyPal.xwvp45ddnm.styles.css.gz",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\compressed\\i0nxk1d540-xwvp45ddnm.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3819,7 +4056,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3429"
+          "Value": "3571"
         },
         {
           "Name": "Content-Type",
@@ -3827,11 +4064,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Ls/Ym+mhbDQ9ytNOwavCIVJ2yGyYv2MAG4lktUVHW9g=\""
+          "Value": "\"EUWcF0CgWBVk/OxXOrQIB7NMWLc/raCZNN7IbCG22zM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 04 Jan 2025 12:50:39 GMT"
+          "Value": "Sat, 04 Jan 2025 18:09:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3849,7 +4086,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "gt2pxm9eph"
+          "Value": "xwvp45ddnm"
         },
         {
           "Name": "label",
@@ -3857,244 +4094,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Ls/Ym+mhbDQ9ytNOwavCIVJ2yGyYv2MAG4lktUVHW9g="
-        }
-      ]
-    },
-    {
-      "Route": "PennyPal.styles.css",
-      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\compressed\\i0nxk1d540-gt2pxm9eph.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000291545190"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3429"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Ls/Ym+mhbDQ9ytNOwavCIVJ2yGyYv2MAG4lktUVHW9g=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 04 Jan 2025 12:50:39 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"fDzawdZMuse2k4ghrEiQSES9+rcSfYJUXOIt5AIJkFg=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-fDzawdZMuse2k4ghrEiQSES9+rcSfYJUXOIt5AIJkFg="
-        }
-      ]
-    },
-    {
-      "Route": "PennyPal.styles.css",
-      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\compressed\\publish\\i0nxk1d540-gt2pxm9eph.br",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "br",
-          "Quality": "0.000346740638"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2883"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"KoNsmUO0lLoS/89wVe13FkLX2GcJI5BuSQO2YIFEeNQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 04 Jan 2025 12:50:39 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "br"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"fDzawdZMuse2k4ghrEiQSES9+rcSfYJUXOIt5AIJkFg=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-fDzawdZMuse2k4ghrEiQSES9+rcSfYJUXOIt5AIJkFg="
-        }
-      ]
-    },
-    {
-      "Route": "PennyPal.styles.css",
-      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\PennyPal.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "16685"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"fDzawdZMuse2k4ghrEiQSES9+rcSfYJUXOIt5AIJkFg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 04 Jan 2025 12:50:39 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-fDzawdZMuse2k4ghrEiQSES9+rcSfYJUXOIt5AIJkFg="
-        }
-      ]
-    },
-    {
-      "Route": "PennyPal.styles.css.br",
-      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\compressed\\publish\\i0nxk1d540-gt2pxm9eph.br",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2883"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"KoNsmUO0lLoS/89wVe13FkLX2GcJI5BuSQO2YIFEeNQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 04 Jan 2025 12:50:39 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "br"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-KoNsmUO0lLoS/89wVe13FkLX2GcJI5BuSQO2YIFEeNQ="
-        }
-      ]
-    },
-    {
-      "Route": "PennyPal.styles.css.gz",
-      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-android\\compressed\\i0nxk1d540-gt2pxm9eph.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3429"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Ls/Ym+mhbDQ9ytNOwavCIVJ2yGyYv2MAG4lktUVHW9g=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 04 Jan 2025 12:50:39 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Ls/Ym+mhbDQ9ytNOwavCIVJ2yGyYv2MAG4lktUVHW9g="
+          "Value": "sha256-EUWcF0CgWBVk/OxXOrQIB7NMWLc/raCZNN7IbCG22zM="
         }
       ]
     }

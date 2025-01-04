@@ -52,6 +52,15 @@
 
 </div>
 
+<div class="searchall">
+    <label for="search" class="lsearch">Search Transactions</label>
+    <input id="search"
+           type="text"
+           @bind="searchQuery"
+           @bind:event="oninput"
+           class="search"
+           placeholder="Search by description..." />
+</div>
 
 
 <div class="date-date">
@@ -205,6 +214,18 @@
     private decimal balance = 0; // Initial user balance
     private bool isInsufficientBalance = false;
     private bool isAddTransactionModalVisible = false;
+    private string _searchQuery = "";
+   
+    
+    private string searchQuery
+    {
+        get => _searchQuery;
+        set
+        {
+            _searchQuery = value;
+            FilterTransactions();
+        }
+    }
 
 
     // New variables to store the calculated totals
@@ -239,6 +260,7 @@
             }
         }
     }
+
 
     protected override void OnInitialized()
     {
@@ -342,6 +364,7 @@
     {
         var transactions = Data.Transactions.AsEnumerable();
 
+        // Apply transaction type filter
         if (selectedFilter == "Debit")
         {
             transactions = transactions.Where(t => t.Debit > 0);
@@ -351,9 +374,25 @@
             transactions = transactions.Where(t => t.Credit > 0);
         }
 
+        // Apply search filter
+        if (!string.IsNullOrWhiteSpace(searchQuery))
+        {
+            transactions = transactions.Where(t =>
+                t.Description != null &&
+                t.Description.Contains(searchQuery, StringComparison.OrdinalIgnoreCase));
+        }
+
+        // Apply tag filter if selected
+        if (selectedTagFilter != "All")
+        {
+            int tagId = int.Parse(selectedTagFilter);
+            transactions = transactions.Where(t => t.Tags.Any(tag => tag.Id == tagId));
+        }
+
         filteredTransactions = transactions.ToList();
-        CalculateTransactionTotals(); // Recalculate totals after filtering
+        CalculateTransactionTotals();
     }
+
 
     private void FilterTransactionsByTag()
     {
@@ -365,9 +404,15 @@
             transactions = transactions.Where(t => t.Tags.Any(tag => tag.Id == tagId));
         }
 
+        if (!string.IsNullOrWhiteSpace(searchQuery))
+        {
+            transactions = transactions.Where(t => t.Description.Contains(searchQuery, StringComparison.OrdinalIgnoreCase));
+        }
+
         filteredTransactions = transactions.ToList();
         CalculateTransactionTotals(); // Recalculate totals after filtering
     }
+
 
     private void FilterTransactionsByDateRange()
     {
@@ -411,10 +456,10 @@
     {
         isAddTransactionModalVisible = false;
         editingTransaction = null;
-    }
+    } 
 
     private void DeleteTransaction(int transactionId)
-    {
+    {   
         var transaction = Data.Transactions.FirstOrDefault(t => t.Id == transactionId);
         if (transaction != null)
         {

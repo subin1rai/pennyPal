@@ -272,7 +272,7 @@ main[b-efk0h901l1] {
     border-radius: 8px;
     padding: 18px;
     gap: 8px;
-    width: 120px;
+    width: 220px;
     margin-top: 12px;
     text-decoration: none; 
     color: inherit; 
@@ -282,22 +282,11 @@ main[b-efk0h901l1] {
 
 }
 
-.card:hover[b-7dugatzo2o] {
-   transform: scale(1.05); 
-}
-
-.card img[b-7dugatzo2o] {
-    height: 47px;
-    width: 48px;
-}
-
 .card p[b-7dugatzo2o] {
-    margin: 0;
     font-size: 14px;
     font-weight: 500;
     text-align: center;
 }
-
 /* /Components/Pages/Login.razor.rz.scp.css */
 *[b-nqghavpk8d] {
     padding: 0;
