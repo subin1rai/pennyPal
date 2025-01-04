@@ -70,8 +70,9 @@ else
             {
                 IsLoggedIn = true;
                 LoginSession.LoggedInUser = user;
+                Console.WriteLine(user);
                 // Pass the LoggedInUserId as a query parameter to the dashboard page
-                NavigationManager.NavigateTo($"/dashboard?userId={LoggedInUserId}");
+                NavigationManager.NavigateTo($"/dashboard");
             }
             else
             {

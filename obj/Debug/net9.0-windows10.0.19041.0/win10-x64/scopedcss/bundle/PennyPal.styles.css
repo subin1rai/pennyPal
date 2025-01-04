@@ -272,7 +272,7 @@ main[b-efk0h901l1] {
     border-radius: 8px;
     padding: 18px;
     gap: 8px;
-    width: 120px;
+    width: 220px;
     margin-top: 12px;
     text-decoration: none; 
     color: inherit; 
@@ -391,6 +391,117 @@ main[b-efk0h901l1] {
     color: #2BA84A;
     text-decoration:none;
 }
+/* /Components/Pages/MyDebt.razor.rz.scp.css */
+*[b-118v551eic] {
+    padding: 0;
+    margin: 0;
+    /*    background-color: red;*/
+}
+
+.badge_tag[b-118v551eic] {
+    color: black;
+}
+
+.heading[b-118v551eic] {
+    padding: 16px;
+}
+
+.form-group-new[b-118v551eic] {
+    font-size: 12px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.form-control-top[b-118v551eic] {
+    width: 80px;
+    padding: 8px;
+    border-bottom: 0.25rem;
+}
+
+.filters[b-118v551eic] {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 8px;
+    padding: 0 16px;
+    margin-bottom: 12px;
+}
+
+.btn-add[b-118v551eic] {
+    border: none;
+    /*    height: 32px;*/
+    color: white;
+    background-color: #1FBF47;
+    padding: 8px 28px;
+    border-radius: 8px;
+}
+
+.modal[b-118v551eic] {
+    /*    padding:0 16px;*/
+}
+
+.modal-dialog[b-118v551eic] {
+    padding: 0 16px;
+    margin: 180px auto;
+}
+
+.modal-content[b-118v551eic] {
+    padding: 24px;
+}
+
+.modal-header .close[b-118v551eic] {
+    background-color: white;
+    border: none;
+    font-size: 34px;
+}
+
+.form-group[b-118v551eic] {
+}
+
+.transaction-list[b-118v551eic] {
+    padding: 0 16px;
+}
+
+.cards-trans[b-118v551eic] {
+    padding: 8px;
+    background: linear-gradient(to bottom right, #08765A, #33AF4F);
+    margin-bottom: 12px;
+    color: white;
+    border-radius: 4px;
+}
+
+.date_head[b-118v551eic] {
+    display: flex;
+    justify-content: space-between;
+}
+
+.transaction-list .amount[b-118v551eic] {
+    font-weight: 600;
+}
+
+.description[b-118v551eic] {
+    padding-bottom: 8px;
+}
+
+/*.tags {
+    padding: 12px;
+}
+
+    .tags p {
+        padding-bottom: 8px;
+    }
+
+    .tags span {
+        padding: 8px 12px;
+        background-color: #1FBF47;
+        border-radius: 50%;
+        border-radius: 8px;
+        color: white;
+        word-spacing: 6px;
+    }
+*/
 /* /Components/Pages/MyTransaction.razor.rz.scp.css */
 *[b-l1vels9g3n] {
     padding: 0 ;
@@ -403,7 +514,8 @@ main[b-efk0h901l1] {
 }
 
 .heading[b-l1vels9g3n] {
-    padding: 16px;
+    padding-bottom:16px;
+    font-size:20px;
 }
 
 .form-group-new[b-l1vels9g3n] {
@@ -423,7 +535,7 @@ main[b-efk0h901l1] {
 .filters[b-l1vels9g3n]{
     display: flex;
     flex-direction:row;
-    justify-content: end;
+    justify-content: space-between;
     gap:8px;
     padding: 0 16px;
     margin-bottom:12px;
@@ -500,6 +612,92 @@ main[b-efk0h901l1] {
         color:white;
         word-spacing:6px;
         }
+
+.form-group[b-l1vels9g3n]{
+    display:flex;
+    flex-direction: column;
+    gap:8px;
+}
+
+.data-input[b-l1vels9g3n]{
+    padding:12px;
+    margin-bottom: 12px;
+}
+
+.btn-addTran[b-l1vels9g3n] {
+    padding: 12px;
+    background-color: #1FBF47;
+    color:white;
+    font-weight:600;
+    letter-spacing:1.5px;
+    border:none;
+    border-radius:8px;
+}
+
+.amount-details[b-l1vels9g3n] {
+    padding: 16px;
+    margin: 0 16px 8px 16px;
+    border-radius:8px;
+    background-color: #90CB9E;
+}
+
+.amount-details h1[b-l1vels9g3n]{
+    
+}
+
+.rowdetails[b-l1vels9g3n] {
+    display: flex;
+    justify-content: space-between;
+    align-items:end;
+}
+
+.edit[b-l1vels9g3n] {
+    border: none;
+    padding: 4px 12px;
+    border-radius: 4px;
+}
+.delete[b-l1vels9g3n] {
+    border: none;
+    padding: 4px 12px;
+    background-color:red;
+    color:white;
+    border-radius: 4px;
+}    
+
+.date-filter[b-l1vels9g3n]{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    gap:8px;
+    justify-content:space-between;
+    padding: 0 16px;
+    margin-bottom:12px;
+}
+
+.btn-date[b-l1vels9g3n] {
+    border: none;
+    padding: 8px 16px;
+    background-color: #1FBF47;
+    color: white;
+    border-radius:4px;
+}
+.date-date[b-l1vels9g3n]{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    padding: 0 16px;
+    margin-bottom:12px;
+}
+
+.form-control-top[b-l1vels9g3n] {
+    width: 60px;
+}
+
+.date-bar[b-l1vels9g3n]{
+    width:80px;
+    border:none;
+}
 /* /Components/Pages/Register.razor.rz.scp.css */
 *[b-sjdc8f49gv] {
     padding: 0;

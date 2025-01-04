@@ -3,6 +3,8 @@ Components\Layout\MainLayout.razor.css
 Components\Layout\NavMenu.razor.css
 Components\Pages\Dashboard.razor.css
 Components\Pages\Login.razor.css
+Components\Pages\MyDebt.razor.css
+Components\Pages\MyTransaction.razor.css
 Components\Pages\Register.razor.css
 wwwroot\css\bootstrap\bootstrap.min.css.map.gz
 wwwroot\css\app.css.gz
@@ -13,9 +15,9 @@ wwwroot\css\app.css.br
 wwwroot\index.html.br
 wwwroot\PennyPal.styles.css.br
 wwwroot\css\bootstrap\bootstrap.min.css.br
-wwwroot\PennyPal.sun2dmef2w.bundle.scp.css.br
+wwwroot\PennyPal.hj24rodvww.bundle.scp.css.br
 wwwroot\css\bootstrap\bootstrap.min.css.gz
-wwwroot\PennyPal.sun2dmef2w.bundle.scp.css.gz
+wwwroot\PennyPal.hj24rodvww.bundle.scp.css.gz
 OpenSans-Regular.ttf
 appicon.ico
 appiconLargeTile.scale-100.png
@@ -74,7 +76,7 @@ splashSplashScreen.scale-150.png
 splashSplashScreen.scale-200.png
 splashSplashScreen.scale-400.png
 wwwroot\PennyPal.styles.css
-wwwroot\PennyPal.sun2dmef2w.bundle.scp.css
+wwwroot\PennyPal.hj24rodvww.bundle.scp.css
 AboutAssets.txt
 wwwroot\css\app.css
 wwwroot\css\bootstrap\bootstrap.min.css

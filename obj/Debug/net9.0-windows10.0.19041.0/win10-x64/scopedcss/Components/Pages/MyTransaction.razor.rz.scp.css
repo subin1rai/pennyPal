@@ -9,7 +9,8 @@
 }
 
 .heading[b-l1vels9g3n] {
-    padding: 16px;
+    padding-bottom:16px;
+    font-size:20px;
 }
 
 .form-group-new[b-l1vels9g3n] {
@@ -29,7 +30,7 @@
 .filters[b-l1vels9g3n]{
     display: flex;
     flex-direction:row;
-    justify-content: end;
+    justify-content: space-between;
     gap:8px;
     padding: 0 16px;
     margin-bottom:12px;
@@ -106,3 +107,89 @@
         color:white;
         word-spacing:6px;
         }
+
+.form-group[b-l1vels9g3n]{
+    display:flex;
+    flex-direction: column;
+    gap:8px;
+}
+
+.data-input[b-l1vels9g3n]{
+    padding:12px;
+    margin-bottom: 12px;
+}
+
+.btn-addTran[b-l1vels9g3n] {
+    padding: 12px;
+    background-color: #1FBF47;
+    color:white;
+    font-weight:600;
+    letter-spacing:1.5px;
+    border:none;
+    border-radius:8px;
+}
+
+.amount-details[b-l1vels9g3n] {
+    padding: 16px;
+    margin: 0 16px 8px 16px;
+    border-radius:8px;
+    background-color: #90CB9E;
+}
+
+.amount-details h1[b-l1vels9g3n]{
+    
+}
+
+.rowdetails[b-l1vels9g3n] {
+    display: flex;
+    justify-content: space-between;
+    align-items:end;
+}
+
+.edit[b-l1vels9g3n] {
+    border: none;
+    padding: 4px 12px;
+    border-radius: 4px;
+}
+.delete[b-l1vels9g3n] {
+    border: none;
+    padding: 4px 12px;
+    background-color:red;
+    color:white;
+    border-radius: 4px;
+}    
+
+.date-filter[b-l1vels9g3n]{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    gap:8px;
+    justify-content:space-between;
+    padding: 0 16px;
+    margin-bottom:12px;
+}
+
+.btn-date[b-l1vels9g3n] {
+    border: none;
+    padding: 8px 16px;
+    background-color: #1FBF47;
+    color: white;
+    border-radius:4px;
+}
+.date-date[b-l1vels9g3n]{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    padding: 0 16px;
+    margin-bottom:12px;
+}
+
+.form-control-top[b-l1vels9g3n] {
+    width: 60px;
+}
+
+.date-bar[b-l1vels9g3n]{
+    width:80px;
+    border:none;
+}

@@ -64,14 +64,17 @@
 
         if (Users.Any(u => u.Username == Username))
         {
-            Message = "Username already exists.";
+            Message =  "Username already exists.";
             return;
         }
+
+        // Find the maximum Userid and increment it
+        int newUserId = Users.Any() ? Users.Max(u => u.Userid) + 1 : 1;
 
         // Create new user and hash the password
         var newUser = new User
             {
-                Userid = Users.Count + 1,
+                Userid = newUserId,
                 Username = Username,
                 Password = UserService.HashPassword(Password), // Hash the password
                 Email = Email
@@ -83,4 +86,5 @@
         Message = "Registration successful. Redirecting to login...";
         Task.Delay(2000).ContinueWith(_ => NavigationManager.NavigateTo("/"));
     }
+
 }

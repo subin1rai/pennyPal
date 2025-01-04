@@ -1,54 +1,250 @@
 ﻿@page "/dashboard"
+@using PennyPal.Model
 @inject NavigationManager NavigationManager
+@inject UserService UserService
+@inject LoginSession LoginSession
 
 <div class="hero">
-        <div class="gradient">
+    <div class="gradient">
         <img class="das-img" src="Images/Gradient.png" />
-        </div>
+    </div>
 
-        <div class="box">
-          <div class="box-data">
+    <div class="box">
+        <div class="box-data">
             <div class="top-row">
                 <div class="detail">
                     <p>PennyPal</p>
-                    <h3 >Subin Rai</h3>
+                    <h3>@Data?.Username</h3>
                 </div>
-                <h1>NRP. 3,578</h1>
+                <h1>NRP. @TotalBalance</h1>
             </div>
 
-           <div class="transaction">
+            <div class="transaction">
                 <p>Transaction ID</p>
                 <p class="num">XXX XXX XXXX</p>
-           </div>
+            </div>
 
-           <div class="deposit">
-               <img src="Images/add.png"/>
-               <P>Add inFlow</P>
-           </div>
-          </div>
+            <div class="deposit">
+                <img src="Images/add.png" />
+                <p>Add InFlow</p>
+            </div>
+        </div>
 
-          <div class="feature">
-              <h1>Features</h1>
-               
-              @* Card *@
-              <div class="card-row">
+        <div class="feature">
+            <h1>Features</h1>
+
+            <!-- Feature Cards -->
+            <div class="card-row">
                 <a href="/transactions" class="card">
                     <img src="Images/inflow.png" alt="Cash Inflow" />
-                    <p>Cash Inflow</p>
+                    <p>Transaction</p>
                 </a>
-                <a href="/outflow" class="card">
-                    <img src="Images/outflow.png" alt="Cash Outflow" />
-                    <p>Cash Inflow</p>
-                </a>
+      
                 <a href="/debt" class="card">
-                    <img src="Images/depts.png" alt="Cash Depts" />
-                    <p>Cash Inflow</p>
+                    <img src="Images/depts.png" alt="Cash Debts" />
+                    <p>Cash Debts</p>
                 </a>
-    
             </div>
-          </div>
+        </div>
+
+        <h1>Records</h1>
+        <div>
+            <p>Cash In: @TotalCredits</p>
+            <p>Cash Out: @TotalDebits</p>
+            <p>Total Debts: @TotalDebts</p>
+            <p>Cleared Debts: @ClearedDebts</p>
+            <p>Cleared Debts: @RemainingDebt</p>
+        </div>
+
+        <h1>Transaction</h1>
+
+        <h3>Top 5 Highest Transactions</h3>
+        <table border="1" style="border-collapse: collapse; width: 100%;">
+            <thead>
+                <tr>
+                    <th>Tags</th>
+                    <th>Amount (NRP)</th>
+                    <th>Date</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (TopHighestTransactions != null && TopHighestTransactions.Any())
+                {
+                    @foreach (var transaction in TopHighestTransactions)
+                    {
+                        <tr>
+                            <td>
+                                @if (transaction.Tags != null && transaction.Tags.Any())
+                                {
+                                    @string.Join(", ", transaction.Tags.Select(tag => tag.tagName))
+                                }
+                                else
+                                {
+                                    <p>   No Tags</p>
+                                    }
+                            </td>
+                            <td>@(transaction.Credit > 0 ? transaction.Credit : transaction.Debit)</td>
+                            <td>@transaction.Date.ToShortDateString()</td>
+                            <td>@transaction.Description</td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="4" style="text-align: center;">No transactions available.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <h3>Top 5 Lowest Transactions</h3>
+        <table border="1" style="border-collapse: collapse; width: 100%;">
+            <thead>
+                <tr>
+                    <th>Tags</th>
+                    <th>Amount (NRP)</th>
+                    <th>Date</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (TopLowestTransactions != null && TopLowestTransactions.Any())
+                {
+                    @foreach (var transaction in TopLowestTransactions)
+                    {
+                        <tr>
+                            <td>
+                                @if (transaction.Tags != null && transaction.Tags.Any())
+                                {
+                                    @string.Join(", ", transaction.Tags.Select(tag => tag.tagName))
+                                }
+                                else
+                                {
+                                    <p>   No Tags</p>
+                                    }
+                            </td>
+                            <td>@(transaction.Credit > 0 ? transaction.Credit : transaction.Debit)</td>
+                            <td>@transaction.Date.ToShortDateString()</td>
+                            <td>@transaction.Description</td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="4" style="text-align: center;">No transactions available.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <h3>Pending Debts</h3>
+        <table border="1" style="border-collapse: collapse; width: 100%;">
+            <thead>
+                <tr>
+                    <th>Debt Name</th>
+                    <th>Total Amount (NRP)</th>
+                    <th>Paid Amount (NRP)</th>
+                    <th>Remaining Amount (NRP)</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Data?.Debts != null && Data.Debts.Any())
+                {
+                    @foreach (var debt in Data.Debts)
+                    {
+                        var remainingAmount = debt.Amount - debt.PaidAmount;
+                        if (remainingAmount > 0) // Only show pending debts
+                        {
+                            <tr>
+                                <td>@debt.Id</td>
+                                <td>@debt.Amount</td>
+                                <td>@debt.Date.ToShortDateString()</td>
+                                @* <td>@debt.PaidAmount</td> *@
+                                @* <td>@remainingAmount</td> *@
+                            </tr>
+                        }
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="4" style="text-align: center;">No pending debts available.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+
+        
     </div>
 </div>
 @code {
+    private User Data;
+    private decimal TotalCredits = 0;
+    private decimal TotalDebits = 0;
+    private decimal TotalBalance = 0;
+    private decimal TotalDebts = 0;
+    private decimal ClearedDebts = 0;
+    private decimal RemainingDebt = 0;
 
+    private List<Transactions> TopHighestTransactions = new();
+    private List<Transactions> TopLowestTransactions = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        var loggedInUser = LoginSession.LoggedInUser;
+
+        var users = UserService.LoadUsers();
+        Data = users.FirstOrDefault(u => u.Userid == loggedInUser.Userid);
+
+        if (Data != null)
+        {
+            CalculateBalance();
+            CalculateDebts();
+            CalculateTopTransactions();
+        }
+    }
+
+    private void CalculateBalance()
+    {
+        if (Data?.Transactions != null)
+        {
+            TotalCredits = Data.Transactions.Sum(t => t.Credit);
+            TotalDebits = Data.Transactions.Sum(t => t.Debit);
+            TotalBalance = TotalCredits - TotalDebits;
+        }
+    }
+
+    private void CalculateDebts()
+    {
+        if (Data?.Debts != null)
+        {
+            TotalDebts = Data.Debts.Sum(d => d.Amount);
+            ClearedDebts = Data.Debts.Sum(d => d.PaidAmount);
+
+            // Calculating Remaining Debts
+            RemainingDebt = TotalDebts - ClearedDebts;  
+        }
+    }
+
+    private void CalculateTopTransactions()
+    {
+        if (Data?.Transactions != null)
+        {
+            // Top 5 Highest Transactions
+            TopHighestTransactions = Data.Transactions
+                .OrderByDescending(t => Math.Max(t.Credit, t.Debit))
+                .Take(5)
+                .ToList();
+
+            // Top 5 Lowest Transactions
+            TopLowestTransactions = Data.Transactions
+                .OrderBy(t => Math.Max(t.Credit, t.Debit))
+                .Take(5)
+                .ToList();
+        }
+    }
 }

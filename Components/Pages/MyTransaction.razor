@@ -3,12 +3,24 @@
 @inject UserService UserService
 @inject LoginSession LoginSession
 
-<h1 class="heading">Transactions</h1>
+
+<!-- Display the Total Numbers -->
+<div class="amount-details">
+    <h1 class="total_amount">Total Amount: @balance</h1>
+    <p class="transactions">Total No of Transactions: @totalTransactions</p>
+    <div class="credit-details">
+        <p>Total No of Credit: @totalCredit</p>
+        <p>Total No of Debit: @totalDebit</p>
+    </div>
+</div>
+
+
 
 <div class="filters">
+
     <div class="form-group-new">
         <label for="filter">Filter Transactions:</label>
-        <select id="filter" @bind="SelectedFilter" class="form-control-top">
+        <select id="filter" @bind="SelectedFilter" class="form-control-top" style="width: 100px">
             <option value="All">All</option>
             <option value="Debit">Debit</option>
             <option value="Credit">Credit</option>
@@ -17,7 +29,7 @@
 
     <div class="form-group-new">
         <label for="tagFilter">Filter by Tag:</label>
-        <select id="tagFilter" @bind="SelectedTagFilter" class="form-control-top">
+        <select id="tagFilter" @bind="SelectedTagFilter" class="form-control-top" style="width: 100px">
             <option value="All">All</option>
             @foreach (var tag in availableTags)
             {
@@ -25,37 +37,79 @@
             }
         </select>
     </div>
-    <button class="btn-add" @onclick="OpenAddTransactionModal">Add</button>
+
+    <div class="form-group-new">
+        <label for="tagFilter">Date:</label>
+        <div>
+            <label for="asc">ASC</label>
+            <input type="radio" id="asc" name="dateOrder" value="ASC">
+        </div>
+        <div>
+            <label for="dsc">DSC</label>
+            <input type="radio" id="dsc" name="dateOrder" value="DSC">
+        </div>
+    </div>
+
 </div>
 
+
+
+<div class="date-date">
+    <div class="form-group-new">
+        <div class="date-start">
+            <label for="startDate">Start Date:</label>
+            <InputDate id="startDate" @bind-Value="startDate" class="date-bar" />
+        </div>
+    </div>
+    <div class="form-group-new">
+        <div class="date-start">
+            <label for="endDate">End Date:</label>
+            <InputDate id="endDate" @bind-Value="endDate" class="date-bar" />
+        </div>
+    </div>
+    <button class="btn-date" @onclick="FilterTransactionsByDateRange">Filter</button>
+</div>
+
+
+<div class="date-filter">
+
+    <h1 class="heading">Transactions History</h1>
+    <button class="btn-add" @onclick="OpenAddTransactionModal">Add</button>
+</div>
 <div class="transaction-list">
     @foreach (var transaction in filteredTransactions)
     {
-        <div class="cards-trans">
+        <div class="cards-trans" style="background: @(transaction.Debit > 0
+            ? "linear-gradient(to bottom right, #D5323D, #A00318)"
+            : "linear-gradient(to bottom right, #08765A, #33AF4F)")">
             <div class="date_head">
                 <p>Transaction Id: @transaction.Id</p>
                 <p>@transaction.Date.ToString("MM/dd/yyyy")</p>
             </div>
 
             <div class="amount">
-                <p>Amount:  @(transaction.Debit > 0 ? transaction.Debit : transaction.Credit)</p>
-                @* <td>@(filteredTransactions.Sum(t => t.Credit) - filteredTransactions.Sum(t => t.Debit))</td> *@
-              
+                <p>Amount: @(transaction.Debit > 0 ? transaction.Debit : transaction.Credit)</p>
             </div>
             <div>
                 <p>Type: @(transaction.Debit > 0 ? "Debit" : "Credit") </p>
-                
             </div>
-           <div class="description">
-                <p> Note: @transaction.Description</p>
-           </div>
+            <div class="description">
+                <p>Note: @transaction.Description</p>
+            </div>
 
-            <div class="tags">
-                <p>Tag:</p>
-                @foreach (var tag in transaction.Tags)
-                {
-                    <span class="badge_tag">@tag.tagName</span>
-                }
+            <div class="rowdetails">
+                <div class="tags">
+                    <p>Tag:</p>
+                    @foreach (var tag in transaction.Tags)
+                    {
+                        <span class="badge_tag">@tag.tagName</span>
+                    }
+                </div>
+
+                <div class="action-btns">
+                    <button class="edit" @onclick="() => OpenEditTransactionModal(transaction)">Edit</button>
+                    <button class="delete" @onclick="() => DeleteTransaction(transaction.Id)">Delete</button>
+                </div>
             </div>
         </div>
     }
@@ -67,7 +121,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Add New Transaction</h5>
+                    <h5 class="modal-title">@((editingTransaction == null) ? "Add New Transaction" : "Edit Transaction")</h5>
                     <button type="button" class="close" @onclick="CloseAddTransactionModal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -77,9 +131,16 @@
                         <DataAnnotationsValidator />
                         <ValidationSummary />
 
+                        @if (isInsufficientBalance)
+                        {
+                            <div class="alert alert-danger" role="alert">
+                                Insufficient Balance!
+                            </div>
+                        }
+
                         <div class="form-group">
                             <label for="type">Transaction Type</label>
-                            <select id="type" style="padding:12px 0;" @bind="selectedTransactionType" class="form-control">
+                            <select id="type" @bind="selectedTransactionType" class="data-input">
                                 <option value="Debit">Debit</option>
                                 <option value="Credit">Credit</option>
                             </select>
@@ -87,17 +148,17 @@
 
                         <div class="form-group">
                             <label for="amount">Amount</label>
-                            <InputNumber id="amount" @bind-Value="newTransactionAmount" class="form-control" />
+                            <InputNumber id="amount" class="form-control" @bind-Value="newTransactionAmount" />
                         </div>
 
                         <div class="form-group">
                             <label for="description">Description</label>
-                            <InputText id="description" @bind-Value="newTransaction.Description" class="form-control" />
+                            <InputText id="description" class="form-control" @bind-Value="newTransaction.Description" />
                         </div>
 
                         <div class="form-group">
                             <label for="tags">Tags</label>
-                            <select id="tags" @bind="selectedTagId" class="form-control">
+                            <select id="tags" @bind="selectedTagId" class="data-input">
                                 @foreach (var tag in availableTags)
                                 {
                                     <option value="@tag.Id">@tag.tagName</option>
@@ -115,7 +176,7 @@
                         }
 
                         <div class="form-group">
-                            <button type="submit" class="btn btn-primary">Add Transaction</button>
+                            <button type="submit" class="btn-addTran">@(editingTransaction == null ? "Add Transaction" : "Update Transaction")</button>
                         </div>
                     </EditForm>
                 </div>
@@ -127,6 +188,7 @@
 @code {
     private User Data;
     private Transactions newTransaction = new Transactions();
+    private Transactions editingTransaction;
     private List<Transactions> filteredTransactions = new List<Transactions>();
     private List<Tag> availableTags = new List<Tag>
     {
@@ -140,7 +202,17 @@
     private string selectedTransactionType = "Debit";
     private string selectedTagFilter = "All";
     private decimal newTransactionAmount;
+    private decimal balance = 0; // Initial user balance
+    private bool isInsufficientBalance = false;
     private bool isAddTransactionModalVisible = false;
+
+
+    // New variables to store the calculated totals
+    private int totalTransactions;
+    private int totalCredit;
+    private int totalDebit;
+    private DateTime? startDate;
+    private DateTime? endDate;
 
     private string SelectedFilter
     {
@@ -175,41 +247,85 @@
         if (Data != null)
         {
             filteredTransactions = Data.Transactions;
+            CalculateBalance();
+            CalculateTransactionTotals();
         }
     }
 
     private void HandleTransactionSubmit()
     {
-        newTransaction.Id = Data.Transactions.Count + 1;
-        newTransaction.Date = DateTime.Now;
-
-        if (selectedTransactionType == "Debit")
+        if (selectedTransactionType == "Debit" && newTransactionAmount > balance)
         {
-            newTransaction.Debit = newTransactionAmount;
-            newTransaction.Credit = 0;
-        }
-        else if (selectedTransactionType == "Credit")
-        {
-            newTransaction.Credit = newTransactionAmount;
-            newTransaction.Debit = 0;
+            isInsufficientBalance = true;
+            return;
         }
 
-        if (selectedTagId == "custom" && !string.IsNullOrEmpty(customTag))
+        isInsufficientBalance = false;
+
+        if (editingTransaction != null)
         {
-            var newCustomTag = new Tag { Id = availableTags.Count + 1, tagName = customTag };
-            availableTags.Add(newCustomTag);
-            newTransaction.Tags.Add(newCustomTag);
-        }
-        else if (int.TryParse(selectedTagId, out var tagId))
-        {
-            var tag = availableTags.FirstOrDefault(t => t.Id == tagId);
-            if (tag != null)
+            // Update the existing transaction
+            editingTransaction.Date = DateTime.Now;
+            editingTransaction.Debit = selectedTransactionType == "Debit" ? newTransactionAmount : 0;
+            editingTransaction.Credit = selectedTransactionType == "Credit" ? newTransactionAmount : 0;
+            editingTransaction.Description = newTransaction.Description;
+
+            // Handle the tags
+            if (selectedTagId == "custom" && !string.IsNullOrEmpty(customTag))
             {
-                newTransaction.Tags.Add(tag);
+                var newCustomTag = new Tag { Id = availableTags.Count + 1, tagName = customTag };
+                availableTags.Add(newCustomTag);
+                editingTransaction.Tags.Add(newCustomTag);
             }
+            else if (int.TryParse(selectedTagId, out var tagId))
+            {
+                var tag = availableTags.FirstOrDefault(t => t.Id == tagId);
+                if (tag != null)
+                {
+                    editingTransaction.Tags.Add(tag);
+                }
+            }
+
+            FilterTransactions();
+        }
+        else
+        {
+            // Add new transaction
+            newTransaction.Id = Data.Transactions.Count + 1;
+            newTransaction.Date = DateTime.Now;
+
+            if (selectedTransactionType == "Debit")
+            {
+                newTransaction.Debit = newTransactionAmount;
+                newTransaction.Credit = 0;
+                balance -= newTransactionAmount; // Update balance when debit
+            }
+            else if (selectedTransactionType == "Credit")
+            {
+                newTransaction.Credit = newTransactionAmount;
+                newTransaction.Debit = 0;
+                balance += newTransactionAmount; // Update balance when credit
+            }
+
+            // Handle the tags
+            if (selectedTagId == "custom" && !string.IsNullOrEmpty(customTag))
+            {
+                var newCustomTag = new Tag { Id = availableTags.Count + 1, tagName = customTag };
+                availableTags.Add(newCustomTag);
+                newTransaction.Tags.Add(newCustomTag);
+            }
+            else if (int.TryParse(selectedTagId, out var tagId))
+            {
+                var tag = availableTags.FirstOrDefault(t => t.Id == tagId);
+                if (tag != null)
+                {
+                    newTransaction.Tags.Add(tag);
+                }
+            }
+
+            Data.Transactions.Add(newTransaction);
         }
 
-        Data.Transactions.Add(newTransaction);
         UserService.SaveUsers(new List<User> { Data });
 
         newTransaction = new Transactions();
@@ -217,8 +333,9 @@
         selectedTagId = null;
         customTag = null;
 
-        FilterTransactions();
         CloseAddTransactionModal();
+        CalculateBalance(); // Recalculate balance after adding or editing the transaction
+        CalculateTransactionTotals(); // Recalculate totals
     }
 
     private void FilterTransactions()
@@ -235,6 +352,7 @@
         }
 
         filteredTransactions = transactions.ToList();
+        CalculateTransactionTotals(); // Recalculate totals after filtering
     }
 
     private void FilterTransactionsByTag()
@@ -248,15 +366,67 @@
         }
 
         filteredTransactions = transactions.ToList();
+        CalculateTransactionTotals(); // Recalculate totals after filtering
+    }
+
+    private void FilterTransactionsByDateRange()
+    {
+        if (startDate.HasValue && endDate.HasValue)
+        {
+            filteredTransactions = Data.Transactions
+                .Where(t => t.Date.Date >= startDate.Value.Date && t.Date.Date <= endDate.Value.Date)
+                .ToList();
+
+            CalculateTransactionTotals(); // Recalculate totals after filtering
+        }
+        else
+        {
+            // If no date range is selected, reset to show all transactions
+            filteredTransactions = Data.Transactions;
+            CalculateTransactionTotals();
+        }
+    }
+
+    private void CalculateTransactionTotals()
+    {
+        totalTransactions = filteredTransactions.Count;
+        totalCredit = filteredTransactions.Count(t => t.Credit > 0);
+        totalDebit = filteredTransactions.Count(t => t.Debit > 0);
     }
 
     private void OpenAddTransactionModal()
     {
+        editingTransaction = null;
+        isAddTransactionModalVisible = true;
+    }
+
+    private void OpenEditTransactionModal(Transactions transaction)
+    {
+        editingTransaction = transaction;
+        newTransaction = transaction;
         isAddTransactionModalVisible = true;
     }
 
     private void CloseAddTransactionModal()
     {
         isAddTransactionModalVisible = false;
+        editingTransaction = null;
+    }
+
+    private void DeleteTransaction(int transactionId)
+    {
+        var transaction = Data.Transactions.FirstOrDefault(t => t.Id == transactionId);
+        if (transaction != null)
+        {
+            Data.Transactions.Remove(transaction);
+            UserService.SaveUsers(new List<User> { Data });
+            CalculateBalance();
+            CalculateTransactionTotals(); // Recalculate totals after deleting
+        }
+    }
+
+    private void CalculateBalance()
+    {
+        balance = Data.Transactions.Sum(t => t.Credit) - Data.Transactions.Sum(t => t.Debit);
     }
 }

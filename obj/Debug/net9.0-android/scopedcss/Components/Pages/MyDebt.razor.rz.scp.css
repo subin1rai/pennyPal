@@ -1,0 +1,110 @@
+*[b-118v551eic] {
+    padding: 0;
+    margin: 0;
+    /*    background-color: red;*/
+}
+
+.badge_tag[b-118v551eic] {
+    color: black;
+}
+
+.heading[b-118v551eic] {
+    padding: 16px;
+}
+
+.form-group-new[b-118v551eic] {
+    font-size: 12px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.form-control-top[b-118v551eic] {
+    width: 80px;
+    padding: 8px;
+    border-bottom: 0.25rem;
+}
+
+.filters[b-118v551eic] {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 8px;
+    padding: 0 16px;
+    margin-bottom: 12px;
+}
+
+.btn-add[b-118v551eic] {
+    border: none;
+    /*    height: 32px;*/
+    color: white;
+    background-color: #1FBF47;
+    padding: 8px 28px;
+    border-radius: 8px;
+}
+
+.modal[b-118v551eic] {
+    /*    padding:0 16px;*/
+}
+
+.modal-dialog[b-118v551eic] {
+    padding: 0 16px;
+    margin: 180px auto;
+}
+
+.modal-content[b-118v551eic] {
+    padding: 24px;
+}
+
+.modal-header .close[b-118v551eic] {
+    background-color: white;
+    border: none;
+    font-size: 34px;
+}
+
+.form-group[b-118v551eic] {
+}
+
+.transaction-list[b-118v551eic] {
+    padding: 0 16px;
+}
+
+.cards-trans[b-118v551eic] {
+    padding: 8px;
+    background: linear-gradient(to bottom right, #08765A, #33AF4F);
+    margin-bottom: 12px;
+    color: white;
+    border-radius: 4px;
+}
+
+.date_head[b-118v551eic] {
+    display: flex;
+    justify-content: space-between;
+}
+
+.transaction-list .amount[b-118v551eic] {
+    font-weight: 600;
+}
+
+.description[b-118v551eic] {
+    padding-bottom: 8px;
+}
+
+/*.tags {
+    padding: 12px;
+}
+
+    .tags p {
+        padding-bottom: 8px;
+    }
+
+    .tags span {
+        padding: 8px 12px;
+        background-color: #1FBF47;
+        border-radius: 50%;
+        border-radius: 8px;
+        color: white;
+        word-spacing: 6px;
+    }
+*/
