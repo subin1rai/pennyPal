@@ -10,7 +10,7 @@
     <img class="main-img" src="Images/Vector.png" />
     <h2 class="pennypal">PennyPal</h2>
     <h2 class="login">Register</h2>
-    <h2 class="welcome">welcome back!</h2>
+    <h2 class="welcome">Create new account!</h2>
 
     <div class="textfield">
        <div class="userlabel">
@@ -56,15 +56,24 @@
 
     private void RegisterPage()
     {
+        // Check if username or password is empty
         if (string.IsNullOrWhiteSpace(Username) || string.IsNullOrWhiteSpace(Password))
         {
             Message = "Username and password are required.";
             return;
         }
 
+        // Check if the username already exists
         if (Users.Any(u => u.Username == Username))
         {
-            Message =  "Username already exists.";
+            Message = "Username already exists.";
+            return;
+        }
+
+        // Validate the password
+        if (!IsValidPassword(Password))
+        {
+            Message = "Password is not strong !";
             return;
         }
 
@@ -76,7 +85,7 @@
             {
                 Userid = newUserId,
                 Username = Username,
-                Password = UserService.HashPassword(Password), // Hash the password
+                Password = UserService.HashPassword(Password),
                 Email = Email
             };
 
@@ -86,5 +95,22 @@
         Message = "Registration successful. Redirecting to login...";
         Task.Delay(2000).ContinueWith(_ => NavigationManager.NavigateTo("/"));
     }
+
+    // Password validation method
+    private bool IsValidPassword(string password)
+    {
+        if (password.Length < 8) return false;
+
+        if (!password.Any(char.IsUpper)) return false;
+
+        if (!password.Any(char.IsLower)) return false;
+
+        if (!password.Any(char.IsDigit)) return false;
+
+        if (!password.Any(ch => !char.IsLetterOrDigit(ch))) return false;
+
+        return true;
+    }
+
 
 }

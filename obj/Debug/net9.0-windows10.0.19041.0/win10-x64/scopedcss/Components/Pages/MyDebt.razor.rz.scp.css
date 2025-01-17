@@ -4,6 +4,13 @@
     /*    background-color: red;*/
 }
 
+h1[b-118v551eic]{
+padding: 0 16px;
+}
+div h3[b-118v551eic]{
+padding: 8px 16px;
+
+}
 .badge_tag[b-118v551eic] {
     color: black;
 }
@@ -72,22 +79,25 @@
 
 .cards-trans[b-118v551eic] {
     padding: 8px;
-    background: linear-gradient(to bottom right, #08765A, #33AF4F);
+    background: linear-gradient(to bottom right, #FFD966, #CC9A00);
     margin-bottom: 12px;
-    color: white;
+    color: black;
     border-radius: 4px;
 }
 
 .date_head[b-118v551eic] {
     display: flex;
     justify-content: space-between;
+    padding: 0 16px;
 }
 
 .transaction-list .amount[b-118v551eic] {
-    font-weight: 600;
+/*    font-weight: 600;*/
+    padding: 0 16px;
 }
 
 .description[b-118v551eic] {
+    padding: 0 16px;
     padding-bottom: 8px;
 }
 
@@ -107,4 +117,24 @@
         color: white;
         word-spacing: 6px;
     }
+
 */
+
+.btn[b-118v551eic]{
+    padding: 8px;
+    margin-left:16px;
+}
+
+.yellow[b-118v551eic]{
+    color:white;
+    background-color:green;
+}
+
+.btn-blue[b-118v551eic] {
+    margin: 12px 0;
+    padding: 12px 0;
+    width: 100%;
+    border: none;
+    background-color: #FFCD33;
+    border-radius:4px;
+}

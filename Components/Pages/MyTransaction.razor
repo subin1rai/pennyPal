@@ -2,16 +2,21 @@
 @using PennyPal.Model
 @inject UserService UserService
 @inject LoginSession LoginSession
+@inject IJSRuntime JSRuntime
 
 
 <!-- Display the Total Numbers -->
 <div class="amount-details">
-    <h1 class="total_amount">Total Amount: @balance</h1>
+<h1 class="total_amount">Total Amount: @CurrencySymbol @(string.Format("{0:F2}", (Data.Transactions.Sum(t => t.Credit) - Data.Transactions.Sum(t => t.Debit)) * ExchangeRate))</h1>
     <p class="transactions">Total No of Transactions: @totalTransactions</p>
     <div class="credit-details">
         <p>Total No of Credit: @totalCredit</p>
         <p>Total No of Debit: @totalDebit</p>
     </div>
+    <div class="export-button">
+        <button class="btn-export" @onclick="ExportTransactions">Export to Excel</button>
+    </div>
+
 </div>
 
 
@@ -41,12 +46,12 @@
     <div class="form-group-new">
         <label for="tagFilter">Date:</label>
         <div>
+            <input type="radio" id="asc" name="dateOrder" @onclick="SortByDateAscending" />
             <label for="asc">ASC</label>
-            <input type="radio" id="asc" name="dateOrder" value="ASC">
         </div>
         <div>
+            <input type="radio" id="dsc" name="dateOrder" @onclick="SortByDateDescending" />
             <label for="dsc">DSC</label>
-            <input type="radio" id="dsc" name="dateOrder" value="DSC">
         </div>
     </div>
 
@@ -62,22 +67,18 @@
            placeholder="Search by description..." />
 </div>
 
-
 <div class="date-date">
     <div class="form-group-new">
-        <div class="date-start">
-            <label for="startDate">Start Date:</label>
-            <InputDate id="startDate" @bind-Value="startDate" class="date-bar" />
-        </div>
+        <label for="startDate">Start Date:</label>
+        <InputDate id="startDate" @bind-Value="startDate" class="date-bar" />
     </div>
     <div class="form-group-new">
-        <div class="date-start">
-            <label for="endDate">End Date:</label>
-            <InputDate id="endDate" @bind-Value="endDate" class="date-bar" />
-        </div>
+        <label for="endDate">End Date:</label>
+        <InputDate id="endDate" @bind-Value="endDate" class="date-bar" />
     </div>
     <button class="btn-date" @onclick="FilterTransactionsByDateRange">Filter</button>
 </div>
+
 
 
 <div class="date-filter">
@@ -97,7 +98,7 @@
             </div>
 
             <div class="amount">
-                <p>Amount: @(transaction.Debit > 0 ? transaction.Debit : transaction.Credit)</p>
+                    <p>Amount: @CurrencySymbol @(string.Format("{0:F2}", (transaction.Debit > 0 ? transaction.Debit : transaction.Credit) * ExchangeRate))</p>
             </div>
             <div>
                 <p>Type: @(transaction.Debit > 0 ? "Debit" : "Credit") </p>
@@ -166,23 +167,26 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="tags">Tags</label>
-                            <select id="tags" @bind="selectedTagId" class="data-input">
-                                @foreach (var tag in availableTags)
-                                {
-                                    <option value="@tag.Id">@tag.tagName</option>
-                                }
-                                <option value="custom">Add Custom Tag</option>
-                            </select>
-                        </div>
+    <label for="tags">Tags</label>
+    <select id="tags" @bind="selectedTagId" class="data-input">
+        @foreach (var tag in availableTags)
+        {
+            <option value="@tag.Id" selected="@(editingTransaction?.Tags.Any(t => t.Id == tag.Id) == true ? "selected" : null)">
+                @tag.tagName
+            </option>
+        }
+        <option value="custom">Add Custom Tag</option>
+    </select>
+</div>
 
-                        @if (selectedTagId == "custom")
-                        {
-                            <div class="form-group">
-                                <label for="customTag">Enter Custom Tag</label>
-                                <InputText id="customTag" @bind-Value="customTag" class="form-control" />
-                            </div>
-                        }
+@if (selectedTagId == "custom")
+{
+    <div class="form-group">
+        <label for="customTag">Enter Custom Tag</label>
+        <InputText id="customTag" @bind-Value="customTag" class="form-control" />
+    </div>
+    }
+
 
                         <div class="form-group">
                             <button type="submit" class="btn-addTran">@(editingTransaction == null ? "Add Transaction" : "Update Transaction")</button>
@@ -200,11 +204,23 @@
     private Transactions editingTransaction;
     private List<Transactions> filteredTransactions = new List<Transactions>();
     private List<Tag> availableTags = new List<Tag>
-    {
-        new Tag { Id = 1, tagName = "Food" },
-        new Tag { Id = 2, tagName = "Transport" },
-        new Tag { Id = 3, tagName = "Entertainment" },
-    };
+   {
+    new Tag { Id = 1, tagName = "Yearly" },
+    new Tag { Id = 2, tagName = "Monthly" },
+    new Tag { Id = 3, tagName = "Food" },
+    new Tag { Id = 4, tagName = "Drinks" },
+    new Tag { Id = 5, tagName = "Clothes" },
+    new Tag { Id = 6, tagName = "Miscellaneous" },
+    new Tag { Id = 7, tagName = "Fuel" },
+    new Tag { Id = 8, tagName = "Rent" },
+    new Tag { Id = 9, tagName = "EMI" },
+    new Tag { Id = 10, tagName = "Education" },
+    new Tag { Id = 11, tagName = "Freelance Payment" },
+    new Tag { Id = 12, tagName = "Salary" },
+    new Tag { Id = 13, tagName = "Investment" },
+    new Tag { Id = 14, tagName = "Entertainment" },
+    new Tag { Id = 15, tagName = "Transport" }
+};
     private string selectedTagId;
     private string customTag;
     private string selectedFilter = "All";
@@ -215,6 +231,9 @@
     private bool isInsufficientBalance = false;
     private bool isAddTransactionModalVisible = false;
     private string _searchQuery = "";
+    private decimal ExchangeRate = 1M; // Default to NRP
+    private string CurrencySymbol = "NRP"; 
+
    
     
     private string searchQuery
@@ -268,15 +287,20 @@
 
         if (Data != null)
         {
+            SetCurrencyPreferences(); 
             filteredTransactions = Data.Transactions;
             CalculateBalance();
             CalculateTransactionTotals();
         }
     }
 
+
     private void HandleTransactionSubmit()
     {
-        if (selectedTransactionType == "Debit" && newTransactionAmount > balance)
+        // Convert the entered amount from the selected currency to base currency (NRP)
+        decimal amountInBaseCurrency = newTransactionAmount / ExchangeRate;
+
+        if (selectedTransactionType == "Debit" && amountInBaseCurrency > balance)
         {
             isInsufficientBalance = true;
             return;
@@ -288,11 +312,13 @@
         {
             // Update the existing transaction
             editingTransaction.Date = DateTime.Now;
-            editingTransaction.Debit = selectedTransactionType == "Debit" ? newTransactionAmount : 0;
-            editingTransaction.Credit = selectedTransactionType == "Credit" ? newTransactionAmount : 0;
+            editingTransaction.Debit = selectedTransactionType == "Debit" ? amountInBaseCurrency : 0;
+            editingTransaction.Credit = selectedTransactionType == "Credit" ? amountInBaseCurrency : 0;
             editingTransaction.Description = newTransaction.Description;
 
             // Handle the tags
+            editingTransaction.Tags.Clear(); // Clear existing tags
+
             if (selectedTagId == "custom" && !string.IsNullOrEmpty(customTag))
             {
                 var newCustomTag = new Tag { Id = availableTags.Count + 1, tagName = customTag };
@@ -318,15 +344,15 @@
 
             if (selectedTransactionType == "Debit")
             {
-                newTransaction.Debit = newTransactionAmount;
+                newTransaction.Debit = amountInBaseCurrency;
                 newTransaction.Credit = 0;
-                balance -= newTransactionAmount; // Update balance when debit
+                balance -= amountInBaseCurrency; // Update balance when debit
             }
             else if (selectedTransactionType == "Credit")
             {
-                newTransaction.Credit = newTransactionAmount;
+                newTransaction.Credit = amountInBaseCurrency;
                 newTransaction.Debit = 0;
-                balance += newTransactionAmount; // Update balance when credit
+                balance += amountInBaseCurrency; // Update balance when credit
             }
 
             // Handle the tags
@@ -350,6 +376,7 @@
 
         UserService.SaveUsers(new List<User> { Data });
 
+        // Reset transaction inputs
         newTransaction = new Transactions();
         newTransactionAmount = 0;
         selectedTagId = null;
@@ -359,6 +386,7 @@
         CalculateBalance(); // Recalculate balance after adding or editing the transaction
         CalculateTransactionTotals(); // Recalculate totals
     }
+
 
     private void FilterTransactions()
     {
@@ -422,7 +450,7 @@
                 .Where(t => t.Date.Date >= startDate.Value.Date && t.Date.Date <= endDate.Value.Date)
                 .ToList();
 
-            CalculateTransactionTotals(); // Recalculate totals after filtering
+            CalculateTransactionTotals(); 
         }
         else
         {
@@ -431,6 +459,23 @@
             CalculateTransactionTotals();
         }
     }
+
+    private void SetCurrencyPreferences()
+    {
+        var selectedCurrency = LoginSession.SelectedCurrency;
+
+        if (selectedCurrency == "USD")
+        {
+            ExchangeRate = 0.007221M;
+            CurrencySymbol = "$";
+        }
+        else
+        {
+            ExchangeRate = 1M; // Default to NRP
+            CurrencySymbol = "NRP";
+        }
+    }
+
 
     private void CalculateTransactionTotals()
     {
@@ -449,8 +494,11 @@
     {
         editingTransaction = transaction;
         newTransaction = transaction;
+        selectedTagId = transaction.Tags.FirstOrDefault()?.Id.ToString(); // Pre-select the first tag
+        customTag = null; // Reset custom tag input
         isAddTransactionModalVisible = true;
     }
+
 
     private void CloseAddTransactionModal()
     {
@@ -466,12 +514,44 @@
             Data.Transactions.Remove(transaction);
             UserService.SaveUsers(new List<User> { Data });
             CalculateBalance();
-            CalculateTransactionTotals(); // Recalculate totals after deleting
+            CalculateTransactionTotals(); 
         }
     }
+
+        private void SortByDateAscending()
+    {
+        filteredTransactions = filteredTransactions.OrderBy(t => t.Date).ToList();
+    }
+
+    private void SortByDateDescending()
+    {
+      filteredTransactions = filteredTransactions.OrderByDescending(t => t.Date).ToList();
+    }
+
+    private async Task ExportTransactions()
+    {
+        try
+        {
+            if (Data?.Transactions != null && Data.Transactions.Any())
+            {
+                string filePath = UserService.ExportTransactionsToExcel(Data.Transactions);
+                await JSRuntime.InvokeVoidAsync("alert", $"Transactions exported successfully to: {filePath}");
+            }
+            else
+            {
+                await JSRuntime.InvokeVoidAsync("alert", "No transactions available to export.");
+            }
+        }
+        catch (Exception ex)
+        {
+            await JSRuntime.InvokeVoidAsync("alert", $"Error exporting transactions: {ex.Message}");
+        }
+    }
+
 
     private void CalculateBalance()
     {
         balance = Data.Transactions.Sum(t => t.Credit) - Data.Transactions.Sum(t => t.Debit);
     }
+
 }

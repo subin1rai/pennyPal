@@ -3,8 +3,9 @@
 @layout FirstLayout
 @inject UserService UserService
 @inject NavigationManager NavigationManager
-@using PennyPal.Model;
+@using PennyPal.Model
 @inject LoginSession LoginSession
+
 @if (IsLoggedIn)
 {
     NavigationManager.NavigateTo("/dashboard");
@@ -15,7 +16,7 @@ else
         <img class="main-img" src="Images/Vector.png" />
         <h2 class="pennypal">PennyPal</h2>
         <h2 class="login">Login</h2>
-        <h2 class="welcome">welcome back!</h2>
+        <h2 class="welcome">Welcome back!</h2>
 
         <div class="textfield">
             <div class="userlabel">
@@ -26,6 +27,14 @@ else
             <div class="userlabel">
                 <label for="password" class="user-label">Password</label>
                 <input @bind="LoginPassword" placeholder="Password" id="password" type="password" class="userinput" />
+            </div>
+
+            <div class="userlabel">
+                <label for="currency" class="user-label">Currency</label>
+                <select @bind="SelectedCurrency" class="userinput" id="currency">
+                    <option value="USD">$ (USD)</option>
+                    <option value="NRP">NRP (Nepalese Rupee)</option>
+                </select>
             </div>
         </div>
 
@@ -45,14 +54,11 @@ else
 }
 
 @code {
-    private string LoginUsername = ""   ;
+    private string LoginUsername = "";
     private string LoginPassword = "";
     private string Message = "";
     private bool IsLoggedIn = false;
-
-    // Store the logged-in user's ID
-    private Guid LoggedInUserId;
-
+    private string SelectedCurrency = "USD"; // Default currency
     private List<User> Users = new();
 
     protected override void OnInitialized()
@@ -70,8 +76,10 @@ else
             {
                 IsLoggedIn = true;
                 LoginSession.LoggedInUser = user;
-                Console.WriteLine(user);
-                // Pass the LoggedInUserId as a query parameter to the dashboard page
+
+                // Store the selected currency in the session or user settings
+                LoginSession.SelectedCurrency = SelectedCurrency;
+
                 NavigationManager.NavigateTo($"/dashboard");
             }
             else

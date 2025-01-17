@@ -1,26 +1,26 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-namespace PennyPal.Model;
+using PennyPal.Model;
 
-
-public class LoginSession
+namespace PennyPal.Model
 {
-private User _loggedInUser;
-
-public bool IsLoggedIn => _loggedInUser != null;
-    public User LoggedInUser
+    public class LoginSession
     {
-        get => _loggedInUser ?? throw new InvalidOperationException("No user is logged in.");
-        set => _loggedInUser = value;
+        private User _loggedInUser;
+        public bool IsLoggedIn => _loggedInUser != null;
+
+        // Logged-in user property
+        public User LoggedInUser
+        {
+            get => _loggedInUser ?? throw new InvalidOperationException("No user is logged in.");
+            set => _loggedInUser = value;
+        }
+        public string SelectedCurrency { get; set; } = "USD"; 
+
+        // Logout functionality
+        public void Logout()
+        {
+            _loggedInUser = null;
+            SelectedCurrency = "USD"; 
+        }
     }
-
-    public void Logout()
-    {
-        _loggedInUser = null;
-    }
-
-
 }

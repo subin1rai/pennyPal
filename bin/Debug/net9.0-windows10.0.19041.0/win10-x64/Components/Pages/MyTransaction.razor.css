@@ -193,3 +193,85 @@
     width:80px;
     border:none;
 }
+
+.searchall{
+    display:flex;
+    flex-direction: column;
+    padding: 0 16px;
+    gap: 4px;
+    padding-bottom:8px;
+}
+
+.search{
+    padding:8px;
+    border-radius:4px;
+    border:0.5px solid grey;
+}
+
+.date-date {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    align-items: center;
+    gap: 12px; /* Space between elements */
+    margin: 16px 0;
+    padding: 8px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+    .date-date .form-group-new {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        min-width: 130px; /* Adjust input field width */
+    }
+
+    .date-date label {
+        font-size: 12px;
+        font-weight: 600;
+        color: #333;
+    }
+
+    .date-date .date-bar {
+        padding: 6px;
+        font-size: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        outline: none;
+    }
+
+        .date-date .date-bar:focus {
+            border-color: #4caf50;
+            box-shadow: 0 0 4px rgba(76, 175, 80, 0.5);
+        }
+
+    .date-date .btn-date {
+        height: 36px; /* Adjust button height to match inputs */
+        padding: 6px 16px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #fff;
+        background-color: #4caf50;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .date-date .btn-date:hover {
+            background-color: #45a049;
+        }
+
+
+.btn-export {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+    .btn-export:hover {
+        background-color: #45a049;
+    }

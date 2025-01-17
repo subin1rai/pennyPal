@@ -3,6 +3,9 @@
 @inject NavigationManager NavigationManager
 @inject UserService UserService
 @inject LoginSession LoginSession
+@inject IJSRuntime JSRuntime
+@using System.Text.Json.Serialization
+
 
 <div class="hero">
     <div class="gradient">
@@ -16,7 +19,7 @@
                     <p>PennyPal</p>
                     <h3>@Data?.Username</h3>
                 </div>
-                <h1>NRP. @TotalBalance</h1>
+                <h1>@CurrencySymbol @(string.Format("{0:F2}", TotalBalance))</h1>
             </div>
 
             <div class="transaction">
@@ -33,176 +36,170 @@
         <div class="feature">
             <h1>Features</h1>
 
-            <!-- Feature Cards -->
             <div class="card-row">
                 <a href="/transactions" class="card">
                     <img src="Images/inflow.png" alt="Cash Inflow" />
                     <p>Transaction</p>
                 </a>
-      
+
                 <a href="/debt" class="card">
                     <img src="Images/depts.png" alt="Cash Debts" />
                     <p>Cash Debts</p>
                 </a>
             </div>
+         
+
+            <!-- Import and Export Section -->
+            <div class="import-export">
+             
+                    <button class="btn-blue" @onclick="ExportUsers">Export Users</button>
+               
+            </div>
         </div>
 
+
         <h1 class="record">Records</h1>
+
         <div class="card-blog">
             <div class="cash-summary">
                 <div class="cash">
                     <p>Cash In</p>
-                    <p>@TotalCredits</p>
+                    <p>@CurrencySymbol @(string.Format("{0:F2}", TotalCredits))</p>
                 </div>
                 <div class="cash">
                     <p>Cash Out</p>
-                    <p>@TotalDebits</p>
+                    <p>@CurrencySymbol @(string.Format("{0:F2}", TotalDebits))</p>
                 </div>
             </div>
             <div class="debt-summary">
                 <div class="cash">
                     <p>Cleared Debts</p>
-                    <p>@ClearedDebts</p>
+                    <p>@CurrencySymbol @(string.Format("{0:F2}", ClearedDebts))</p>
                 </div>
                 <div class="cash">
                     <p>Remaining Debts</p>
-                    <p>@RemainingDebt</p>
+                    <p>@CurrencySymbol @(string.Format("{0:F2}", RemainingDebt))</p>
                 </div>
             </div>
         </div>
-            <div class="total-debts">
-                <p>Total Debts</p>
-                <p>@TotalDebts</p>
+        <div class="total-debts">
+            <p>Total Debts</p>
+            <p>@CurrencySymbol @(string.Format("{0:F2}", TotalDebts))</p>
+        </div>
+
+        <div class="high">
+            <h1>Transaction</h1>
+
+            <div class="date-range-filter">
+                <div class="date-group">
+                    <label for="startDate">Start Date:</label>
+                    <input type="date" id="startDate" @bind="StartDate" />
+                </div>
+
+                <div class="date-group">
+                    <label for="endDate">End Date:</label>
+                    <input type="date" id="endDate" @bind="EndDate" />
+                </div>
+
+                <button @onclick="FilterByDate">Filter</button>
             </div>
 
-
-    <div class="high">
-        <h1>Transaction</h1>
-
-        <h3>Top 5 Highest Transactions</h3>
-        <table border="1" style="border-collapse: collapse; width: 100%;">
-            <thead>
-                <tr>
-                    <th>Tags</th>
-                    <th>Amount (NRP)</th>
-                    <th>Date</th>
-                    <th>Description</th>
-                </tr>
-            </thead>
-            <tbody>
-                @if (TopHighestTransactions != null && TopHighestTransactions.Any())
-                {
-                    @foreach (var transaction in TopHighestTransactions)
+          
+            <div class="transaction-container">
+                <!-- Highest Transactions -->
+                <div class="transaction-header">
+                    <h1>Highest Transaction</h1>
+                </div>
+                <div class="transaction-list">
+                    @if (TopHighestTransactions != null && TopHighestTransactions.Any())
                     {
-                        <tr>
-                            <td>
-                                @if (transaction.Tags != null && transaction.Tags.Any())
-                                {
-                                    @string.Join(", ", transaction.Tags.Select(tag => tag.tagName))
-                                }
-                                else
-                                {
-                                    <p>   No Tags</p>
-                                    }
-                            </td>
-                            <td>@(transaction.Credit > 0 ? transaction.Credit : transaction.Debit)</td>
-                            <td>@transaction.Date.ToShortDateString()</td>
-                            <td>@transaction.Description</td>
-                        </tr>
-                    }
-                }
-                else
-                {
-                    <tr>
-                        <td colspan="4" style="text-align: center;">No transactions available.</td>
-                    </tr>
-                }
-            </tbody>
-        </table>
-
-        <h3>Top 5 Lowest Transactions</h3>
-        <table border="1" style="border-collapse: collapse; width: 100%;">
-            <thead>
-                <tr>
-                    <th>Tags</th>
-                    <th>Amount (NRP)</th>
-                    <th>Date</th>
-                    <th>Description</th>
-                </tr>
-            </thead>
-            <tbody>
-                @if (TopLowestTransactions != null && TopLowestTransactions.Any())
-                {
-                    @foreach (var transaction in TopLowestTransactions)
-                    {
-                        <tr>
-                            <td>
-                                @if (transaction.Tags != null && transaction.Tags.Any())
-                                {
-                                    @string.Join(", ", transaction.Tags.Select(tag => tag.tagName))
-                                }
-                                else
-                                {
-                                    <p>   No Tags</p>
-                                    }
-                            </td>
-                            <td>@(transaction.Credit > 0 ? transaction.Credit : transaction.Debit)</td>
-                            <td>@transaction.Date.ToShortDateString()</td>
-                            <td>@transaction.Description</td>
-                        </tr>
-                    }
-                }
-                else
-                {
-                    <tr>
-                        <td colspan="4" style="text-align: center;">No transactions available.</td>
-                    </tr>
-                }
-            </tbody>
-        </table>
-    </div>
-
-    <div class="pending">
-        <h3>Pending Debts</h3>
-        <table border="1" style="border-collapse: collapse; width: 100%;">
-            <thead>
-                <tr>
-                    <th>Debt Name</th>
-                    <th>Total Amount (NRP)</th>
-                    <th>Paid Amount (NRP)</th>
-                    <th>Remaining Amount (NRP)</th>
-                </tr>
-            </thead>
-            <tbody>
-                @if (Data?.Debts != null && Data.Debts.Any())
-                {
-                    @foreach (var debt in Data.Debts)
-                    {
-                        var remainingAmount = debt.Amount - debt.PaidAmount;
-                        if (remainingAmount > 0) // Only show pending debts
+                        @foreach (var transaction in TopHighestTransactions)
                         {
-                            <tr>
-                                <td>@debt.Id</td>
-                                <td>@debt.Amount</td>
-                                <td>@debt.Date.ToShortDateString()</td>
-                                @* <td>@debt.PaidAmount</td> *@
-                                @* <td>@remainingAmount</td> *@
-                            </tr>
+                            <div class="transaction-item">
+                                <div class="transaction-details">
+                                    <h2>@(transaction.Tags?.FirstOrDefault()?.tagName ?? "No Tag")</h2>
+                                    <p>Date: @transaction.Date.ToString("yyyy-MMM-dd")</p>
+                                </div>
+                                <div class="transaction-amount" style="color: red;">
+                                    @CurrencySymbol @(string.Format("{0:N0}", Math.Max(transaction.Credit, transaction.Debit) * ExchangeRate))
+                                </div>
+                            </div>
                         }
                     }
+                    else
+                    {
+                        <p style="text-align: center;">No highest transactions available.</p>
+                    }
+                </div>
+
+                <!-- Lowest Transactions -->
+                <div class="transaction-header">
+                    <h1>Lowest Transaction</h1>
+                </div>
+                <div class="transaction-list">
+                    @if (TopLowestTransactions != null && TopLowestTransactions.Any())
+                    {
+                        @foreach (var transaction in TopLowestTransactions)
+                        {
+                            <div class="transaction-item">
+                                <div class="transaction-details">
+                                    <h2>@(transaction.Tags?.FirstOrDefault()?.tagName ?? "No Tag")</h2>
+                                    <p>Date: @transaction.Date.ToString("yyyy-MMM-dd")</p>
+                                </div>
+                                <div class="transaction-amount" style="color: red;">
+                                    @CurrencySymbol @(string.Format("{0:N0}", Math.Max(transaction.Credit, transaction.Debit) * ExchangeRate))
+                                </div>
+                            </div>
+                        }
+                    }
+                    else
+                    {
+                        <p style="text-align: center;">No lowest transactions available.</p>
+                    }
+                </div>
+            </div>
+
+        </div>
+
+        <div class="debt-container">
+            <div class="debt-header">
+                <h1>Dept</h1>
+                <select class="dropdown">
+                    <option value="Month">Month</option>
+                    <option value="Year">Year</option>
+                </select>
+            </div>
+
+            <div class="debt-list">
+                @if (Data?.Debts != null && Data.Debts.Any())
+                {
+                    @foreach (var debt in Data.Debts.Where(d => d.Amount - d.PaidAmount > 0))
+                    {
+                        <div class="debt-item">
+                            <div class="debt-details">
+                                <h2>@debt.Source</h2>
+                                <p>Due Date: @debt.DueDate.ToString("yyyy-MMM-dd")</p>
+                            </div>
+                            <div class="debt-amount" style="color: red;">
+                                @CurrencySymbol @(string.Format("{0:N0}", (debt.Amount - debt.PaidAmount) * ExchangeRate))
+                            </div>
+                        </div>
+                    }
                 }
                 else
                 {
-                    <tr>
-                        <td colspan="4" style="text-align: center;">No pending debts available.</td>
-                    </tr>
+                    <p style="text-align: center;">No pending debts available.</p>
                 }
-            </tbody>
-        </table>
+            </div>
         </div>
+
+
     </div>
 
 </div>
+
+
+
 @code {
     private User Data;
     private decimal TotalCredits = 0;
@@ -211,6 +208,10 @@
     private decimal TotalDebts = 0;
     private decimal ClearedDebts = 0;
     private decimal RemainingDebt = 0;
+    private decimal ExchangeRate = 1M;
+    private string CurrencySymbol = "NRP";
+    private DateTime? StartDate = null;
+    private DateTime? EndDate = null;
 
     private List<Transactions> TopHighestTransactions = new();
     private List<Transactions> TopLowestTransactions = new();
@@ -224,9 +225,26 @@
 
         if (Data != null)
         {
+            SetCurrencyPreferences();
             CalculateBalance();
             CalculateDebts();
             CalculateTopTransactions();
+        }
+    }
+
+    private void SetCurrencyPreferences()
+    {
+        var selectedCurrency = LoginSession.SelectedCurrency;
+
+        if (selectedCurrency == "USD")
+        {
+            ExchangeRate = 0.007221M; 
+            CurrencySymbol = "$";
+        }
+        else
+        {
+            ExchangeRate = 1M;
+            CurrencySymbol = "NRP";
         }
     }
 
@@ -234,8 +252,8 @@
     {
         if (Data?.Transactions != null)
         {
-            TotalCredits = Data.Transactions.Sum(t => t.Credit);
-            TotalDebits = Data.Transactions.Sum(t => t.Debit);
+            TotalCredits = Data.Transactions.Sum(t => t.Credit) * ExchangeRate;
+            TotalDebits = Data.Transactions.Sum(t => t.Debit) * ExchangeRate;
             TotalBalance = TotalCredits - TotalDebits;
         }
     }
@@ -244,11 +262,9 @@
     {
         if (Data?.Debts != null)
         {
-            TotalDebts = Data.Debts.Sum(d => d.Amount);
-            ClearedDebts = Data.Debts.Sum(d => d.PaidAmount);
-
-            // Calculating Remaining Debts
-            RemainingDebt = TotalDebts - ClearedDebts;  
+            TotalDebts = Data.Debts.Sum(d => d.Amount) * ExchangeRate;
+            ClearedDebts = Data.Debts.Sum(d => d.PaidAmount) * ExchangeRate;
+            RemainingDebt = Data.Debts.Sum(d => (d.Amount - d.PaidAmount) > 0 ? (d.Amount - d.PaidAmount) * ExchangeRate : 0);
         }
     }
 
@@ -256,17 +272,39 @@
     {
         if (Data?.Transactions != null)
         {
-            // Top 5 Highest Transactions
-            TopHighestTransactions = Data.Transactions
-                .OrderByDescending(t => Math.Max(t.Credit, t.Debit))
+            var filteredTransactions = Data.Transactions
+                .Where(t => (!StartDate.HasValue || t.Date >= StartDate.Value) &&
+                            (!EndDate.HasValue || t.Date <= EndDate.Value))
+                .ToList();
+
+            TopHighestTransactions = filteredTransactions
+                .OrderByDescending(t => Math.Max(t.Credit, t.Debit) * ExchangeRate)
                 .Take(5)
                 .ToList();
 
-            // Top 5 Lowest Transactions
-            TopLowestTransactions = Data.Transactions
-                .OrderBy(t => Math.Max(t.Credit, t.Debit))
+            TopLowestTransactions = filteredTransactions
+                .OrderBy(t => Math.Max(t.Credit, t.Debit) * ExchangeRate)
                 .Take(5)
                 .ToList();
         }
+    }
+
+    private async Task ExportUsers()
+    {
+        try
+        {
+            // Call the ExportUsers method from UserService
+            string exportedFilePath = UserService.ExportUsers();
+            await JSRuntime.InvokeVoidAsync("alert", $"Users exported successfully to: {exportedFilePath}");
+        }
+        catch (Exception ex)
+        {
+            await JSRuntime.InvokeVoidAsync("alert", $"Failed to export users: {ex.Message}");
+        }
+    }
+
+    private void FilterByDate()
+    {
+        CalculateTopTransactions();
     }
 }

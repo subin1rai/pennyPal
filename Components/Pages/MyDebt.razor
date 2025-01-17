@@ -5,16 +5,8 @@
 
 <h1>User Debts</h1>
 <div>
-    <h3>Total Debt Amount: @Data?.Debts?.Sum(d => d.Amount) </h3>
+    <h3>Total Debt Amount: @CurrencySymbol @(string.Format("{0:F2}", Data?.Debts?.Sum(d => d.Amount * ExchangeRate)))</h3>
 </div>
-
-<!-- Error Message Section -->
-@if (isInsufficientBalance)
-{
-    <div class="text-danger">
-        Insufficient balance to clear the debt.
-    </div>
-}
 
 <div class="transaction-list">
     @foreach (var debt in Data.Debts)
@@ -22,28 +14,31 @@
         <div class="cards-trans">
             <div class="date_head">
                 <p>Debt Id: @debt.Id</p>
-                <p>@debt.Date.ToString("MM/dd/yyyy")</p>
+                <p>Date: @debt.Date.ToString("MM/dd/yyyy")</p>
+                <p>Due Date: @debt.DueDate.ToString("MM/dd/yyyy")</p>
             </div>
 
             <div class="amount">
-                <p>Amount: @debt.Amount</p>
+                <p>Amount: @CurrencySymbol @(string.Format("{0:F2}", debt.Amount * ExchangeRate))</p>
             </div>
 
-            <div>
-                <p>Paid Amount: @debt.PaidAmount</p>
+            <div class="amount">
+                <p>Paid Amount: @CurrencySymbol @(string.Format("{0:F2}", debt.PaidAmount * ExchangeRate))</p>
+                <p>Remaining Amount: @CurrencySymbol @(string.Format("{0:F2}", debt.RemainingAmount * ExchangeRate))</p>
             </div>
 
-            <div class="status">
+            <div class="amount">
                 <p>Status: @debt.Status</p>
             </div>
 
             <div class="description">
+                <p>Source: @debt.Source</p>
                 <p>Note: @debt.Description</p>
             </div>
 
             @if (debt.Status != DebtStatus.Clear)
             {
-                <button class="btn btn-warning" @onclick="() => ClearDebt(debt)">Clear</button>
+                <button class="btn btn-warning yellow" @onclick="() => OpenInstallmentModal(debt)">Clear in Installments</button>
             }
 
             @if (debt.Status == DebtStatus.Clear)
@@ -55,6 +50,41 @@
 </div>
 
 <button class="btn btn-primary" @onclick="OpenModal">Add New Debt</button>
+@if (isInstallmentModalOpen)
+{
+    <div class="modal show d-block" tabindex="-1" style="background-color: rgba(0, 0, 0, 0.5); display: flex; align-items: center; justify-content: center;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Pay in Installments</h5>
+                    <button type="button" class="btn-close" @onclick="CloseInstallmentModal"></button>
+                </div>
+                <div class="modal-body">
+                    <EditForm Model="installmentPayment" OnValidSubmit="HandleInstallmentPayment">
+                        <DataAnnotationsValidator />
+                        <ValidationSummary />
+
+                        @if (isInsufficientBalance)
+                        {
+                            <div class="alert alert-danger">
+                                <p>Insufficient balance or invalid installment amount.</p>
+                            </div>
+                        }
+
+                        <div class="form-group">
+                            <label for="installmentAmount">Installment Amount</label>
+                            <InputNumber id="installmentAmount" @bind-Value="installmentPayment.Amount" class="form-control" />
+                        </div>
+
+                        <div class="form-group mt-3">
+                            <button type="submit" class="btn btn-primary">Pay Installment</button>
+                        </div>
+                    </EditForm>
+                </div>
+            </div>
+        </div>
+    </div>
+}
 
 @if (isModalOpen)
 {
@@ -76,22 +106,22 @@
                         </div>
 
                         <div class="form-group">
+                            <label for="dueDate">Due Date</label>
+                            <InputDate id="dueDate" @bind-Value="newDebt.DueDate" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="source">Source</label>
+                            <InputText id="source" @bind-Value="newDebt.Source" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
                             <label for="description">Description</label>
                             <InputText id="description" @bind-Value="newDebt.Description" class="form-control" />
                         </div>
 
                         <div class="form-group">
-                            <label for="status">Status</label>
-                            <InputSelect id="status" @bind-Value="newDebt.Status" class="form-control">
-                                <option value="0">Pending</option>
-                                <option value="1">Paid</option>
-                                <option value="2">Overdue</option>
-                                <option value="3">Clear</option>
-                            </InputSelect>
-                        </div>
-
-                        <div class="form-group">
-                            <button type="submit" class="btn btn-primary">Save</button>
+                            <button type="submit" class="btn-blue">Save</button>
                         </div>
                     </EditForm>
                 </div>
@@ -103,53 +133,49 @@
 @code {
     private User Data;
     private Debts newDebt = new Debts();
+    private Debts installmentPayment = new Debts();
+    private Debts selectedDebt;
     private bool isModalOpen = false;
+    private bool isInstallmentModalOpen = false;
     private decimal balance = 0;
-    private bool isInsufficientBalance = false; // To track balance error
+    private bool isInsufficientBalance = false;
+    private decimal ExchangeRate = 1M;
+    private string CurrencySymbol = "NRP";
 
     protected override void OnInitialized()
     {
         Data = UserService.LoadUsers()?.FirstOrDefault(u => u.Userid == LoginSession.LoggedInUser.Userid);
-
-        // Check if Data is null
         if (Data == null)
         {
             throw new InvalidOperationException("User data not found.");
         }
 
-        CalculateBalance(); // Calculate balance when the page loads
+        SetCurrencyPreferences();
+        CalculateBalance();
     }
 
-    private void HandleDebtSubmit()
+    private void SetCurrencyPreferences()
     {
-        if (newDebt.Amount <= 0)
+        var selectedCurrency = LoginSession.SelectedCurrency;
+
+        if (selectedCurrency == "USD")
         {
-            // Display validation message if amount is not positive
-            return;
+            ExchangeRate = 0.007221M;
+            CurrencySymbol = "$";
         }
-
-        newDebt.Id = Data.Debts?.Count + 1 ?? 1;
-        newDebt.Date = DateTime.Now;
-        Data.Debts?.Add(newDebt);
-
-        var newTransaction = new Transactions
-            {
-                Id = Data.Transactions?.Count + 1 ?? 1,
-                Credit = newDebt.Amount,
-                Debit = 0,
-                Date = newDebt.Date,
-                Description = $"Debt Added: {newDebt.Description}",
-                Tags = new List<Tag> { new Tag { tagName = "Debt" } }
-            };
-        Data.Transactions?.Add(newTransaction);
-
-        UserService.SaveUsers(new List<User> { Data });
-        newDebt = new Debts();
-        CalculateBalance(); // Recalculate balance after adding debt
+        else
+        {
+            ExchangeRate = 1M;
+            CurrencySymbol = "NRP";
+        }
     }
 
     private void OpenModal()
     {
+        newDebt = new Debts
+            {
+                DueDate = DateTime.Now.AddDays(30)
+            };
         isModalOpen = true;
     }
 
@@ -157,107 +183,92 @@
     {
         isModalOpen = false;
     }
-  
 
-    private void ClearDebt(Debts debt)
+    private void HandleDebtSubmit()
     {
-        try
-        {
-            if (debt == null)
+        if (newDebt.Amount <= 0) return;
+
+        decimal amountInBaseCurrency = newDebt.Amount / ExchangeRate;
+        newDebt.Id = Data.Debts?.Count + 1 ?? 1;
+        newDebt.Date = DateTime.Now;
+        newDebt.Amount = amountInBaseCurrency;
+        newDebt.RemainingAmount = amountInBaseCurrency;
+        Data.Debts?.Add(newDebt);
+
+        Data.Transactions?.Add(new Transactions
             {
-                Console.WriteLine("Debt is null.");
-                return;
-            }
+                Id = Data.Transactions?.Count + 1 ?? 1,
+                Credit = amountInBaseCurrency,
+                Debit = 0,
+                Date = newDebt.Date,
+                Description = $"Debt Added: {newDebt.Description}",
+                Tags = new List<Tag> { new Tag { tagName = "Debt" } }
+            });
 
-            // Calculate the main balance (total credit - total debit)
-            CalculateBalance();
-
-            // Check if balance is sufficient to clear the debt
-            if (balance >= debt.Amount && debt.Status != DebtStatus.Clear)
-            {
-                // Set the status to 'Clear' and update PaidAmount
-                debt.Status = DebtStatus.Clear;
-                debt.PaidAmount = debt.Amount;
-
-                // Update the debt in the data collection
-                var existingDebt = Data.Debts?.FirstOrDefault(d => d.Id == debt.Id);
-                if (existingDebt != null)
-                {
-                    existingDebt.Status = DebtStatus.Clear;
-                    existingDebt.Amount = 0; // Deduct the amount as it has been paid
-                    existingDebt.PaidAmount = debt.PaidAmount; // Reflect the cleared amount
-                    existingDebt.Description = $"Debt Cleared: {debt.Description}";
-                    existingDebt.Date = DateTime.Now; // Update the date
-                }
-
-                // Create a new transaction for clearing the debt
-                var newTransaction = new Transactions
-                    {
-                        Id = Data.Transactions?.Count + 1 ?? 1, // Increment transaction ID
-                        Debit = debt.PaidAmount, // Deduct the debt amount
-                        Credit = 0, // No credit in this case
-                        Date = DateTime.Now, // Current date for transaction
-                        Description = $"Debt Cleared: {debt.Description}",
-                        Tags = new List<Tag> { new Tag { tagName = "Clear Debt" } }
-                    };
-
-                Data.Transactions?.Add(newTransaction); // Add the transaction to the collection
-
-                // Save the updated debt data
-                SaveUserData(Data);
-
-                // Recalculate balance after clearing the debt
-                CalculateBalance();
-
-                // Reset error message in case of insufficient balance
-                isInsufficientBalance = false;
-
-                // Trigger UI update
-                StateHasChanged(); // Ensures the UI is updated dynamically
-            }
-            else
-            {
-                // Show error message when balance is insufficient
-                isInsufficientBalance = true;
-                Console.WriteLine("Insufficient balance to clear the debt.");
-            }
-        }
-        catch (Exception ex)
-        {
-            // Catch and log any unexpected errors
-            Console.WriteLine($"Error while clearing debt: {ex.Message}");
-        }
+        UserService.SaveUsers(new List<User> { Data });
+        newDebt = new Debts();
+        CalculateBalance();
+        CloseModal();
     }
 
-
-
-    private bool CanClearDebt(decimal debtAmount)
+    private void OpenInstallmentModal(Debts debt)
     {
-        return balance >= debtAmount; // Check if the balance is enough to clear the debt
+        selectedDebt = debt;
+        isInstallmentModalOpen = true;
+    }
+
+    private void CloseInstallmentModal()
+    {
+        isInstallmentModalOpen = false;
+    }
+
+    private void HandleInstallmentPayment()
+    {
+        if (installmentPayment.Amount <= 0) return;
+
+        decimal amountInBaseCurrency = installmentPayment.Amount / ExchangeRate;
+
+        if (amountInBaseCurrency > balance || amountInBaseCurrency > selectedDebt.RemainingAmount)
+        {
+            isInsufficientBalance = true;
+            return;
+        }
+
+        isInsufficientBalance = false;
+
+        selectedDebt.RemainingAmount -= amountInBaseCurrency;
+        selectedDebt.PaidAmount += amountInBaseCurrency;
+
+        if (selectedDebt.RemainingAmount <= 0)
+        {
+            selectedDebt.Status = DebtStatus.Clear;
+        }
+
+        Data.Transactions?.Add(new Transactions
+            {
+                Id = Data.Transactions?.Count + 1 ?? 1,
+                Debit = amountInBaseCurrency,
+                Credit = 0,
+                Date = DateTime.Now,
+                Description = $"Installment Payment: {installmentPayment.Amount}",
+                Tags = new List<Tag> { new Tag { tagName = "Installment" } }
+            });
+
+        UserService.SaveUsers(new List<User> { Data });
+        installmentPayment = new Debts();
+        CloseInstallmentModal();
+        CalculateBalance();
     }
 
     private void DeleteDebt(Debts debt)
     {
-        if (debt == null) return;
-
         Data.Debts?.Remove(debt);
         UserService.SaveUsers(new List<User> { Data });
-        CalculateBalance(); // Recalculate balance after deleting debt
+        CalculateBalance();
     }
 
     private void CalculateBalance()
     {
-        balance = Data?.Transactions?.Sum(t => t.Credit) - Data?.Transactions?.Sum(t => t.Debit) ?? 0;
-    }
-
-    private void SaveUserData(User user)
-    {
-        var users = UserService.LoadUsers();
-        var userIndex = users.FindIndex(u => u.Userid == user.Userid);
-        if (userIndex != -1)
-        {
-            users[userIndex] = user;
-            UserService.SaveUsers(users);
-        }
+        balance = (Data?.Transactions?.Sum(t => t.Credit) ?? 0) - (Data?.Transactions?.Sum(t => t.Debit) ?? 0);
     }
 }

@@ -4,6 +4,13 @@
     /*    background-color: red;*/
 }
 
+h1{
+padding: 0 16px;
+}
+div h3{
+padding: 8px 16px;
+
+}
 .badge_tag {
     color: black;
 }
@@ -72,22 +79,25 @@
 
 .cards-trans {
     padding: 8px;
-    background: linear-gradient(to bottom right, #08765A, #33AF4F);
+    background: linear-gradient(to bottom right, #FFD966, #CC9A00);
     margin-bottom: 12px;
-    color: white;
+    color: black;
     border-radius: 4px;
 }
 
 .date_head {
     display: flex;
     justify-content: space-between;
+    padding: 0 16px;
 }
 
 .transaction-list .amount {
-    font-weight: 600;
+/*    font-weight: 600;*/
+    padding: 0 16px;
 }
 
 .description {
+    padding: 0 16px;
     padding-bottom: 8px;
 }
 
@@ -107,4 +117,24 @@
         color: white;
         word-spacing: 6px;
     }
+
 */
+
+.btn{
+    padding: 8px;
+    margin-left:16px;
+}
+
+.yellow{
+    color:white;
+    background-color:green;
+}
+
+.btn-blue {
+    margin: 12px 0;
+    padding: 12px 0;
+    width: 100%;
+    border: none;
+    background-color: #FFCD33;
+    border-radius:4px;
+}

@@ -8,21 +8,21 @@ namespace PennyPal.Model
 {
     public enum DebtStatus
     {
-        Pending,
-        Paid,
-        Overdue,
-        Clear // Added Clear status
+        Pending = 0,
+        Paid = 1,
+        Overdue = 2,
+        Clear = 3
     }
-
-
     public class Debts
     {
         public int Id { get; set; }
-        public decimal Amount { get; set; } // Total debt amount
-        public decimal PaidAmount { get; set; } // Amount paid towards debt
+        public decimal Amount { get; set; }
+        public decimal PaidAmount { get; set; }
+        public decimal RemainingAmount { get; set; } 
         public DateTime Date { get; set; }
+        public DateTime DueDate { get; set; }
+        public DebtStatus Status { get; set; }
         public string Description { get; set; }
-        public DebtStatus Status { get; set; } // Enum to represent the status
+        public string Source { get; set; }
     }
-
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "q9S5V2Tpj9w+YBAxmtHsdipVgtewpzq2QQSElXUo3Cw=",
+  "Hash": "TOoXSPVEfq9Ml+iZ+ibgRlPhswzbnh1i2Gz7vmOsTo8=",
   "Source": "PennyPal",
   "BasePath": "/",
   "Mode": "Root",
@@ -80,12 +80,12 @@
       "OriginalItemSpec": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\wwwroot\\index.html"
     },
     {
-      "Identity": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\i0nxk1d540-xwvp45ddnm.gz",
+      "Identity": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\i0nxk1d540-9xb6j73pt0.gz",
       "SourceId": "PennyPal",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "PennyPal#[.{fingerprint=xwvp45ddnm}]?.styles.css.gz",
+      "RelativePath": "PennyPal#[.{fingerprint=9xb6j73pt0}]?.styles.css.gz",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Alternative",
@@ -94,8 +94,8 @@
       "RelatedAsset": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\PennyPal.styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "tpz5xwwj5o",
-      "Integrity": "EUWcF0CgWBVk/OxXOrQIB7NMWLc/raCZNN7IbCG22zM=",
+      "Fingerprint": "725ycsufdd",
+      "Integrity": "4ZVffH+zd8zmuLjMX2dvJOTYLgdJiX9pTjlkKxGM5Ow=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\PennyPal.styles.css"
@@ -122,12 +122,12 @@
       "OriginalItemSpec": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\s6lxhk16z5-xwvp45ddnm.gz",
+      "Identity": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\s6lxhk16z5-9xb6j73pt0.gz",
       "SourceId": "PennyPal",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "PennyPal#[.{fingerprint=xwvp45ddnm}]!.bundle.scp.css.gz",
+      "RelativePath": "PennyPal#[.{fingerprint=9xb6j73pt0}]!.bundle.scp.css.gz",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Alternative",
@@ -136,8 +136,8 @@
       "RelatedAsset": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\PennyPal.bundle.scp.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "tpz5xwwj5o",
-      "Integrity": "EUWcF0CgWBVk/OxXOrQIB7NMWLc/raCZNN7IbCG22zM=",
+      "Fingerprint": "725ycsufdd",
+      "Integrity": "4ZVffH+zd8zmuLjMX2dvJOTYLgdJiX9pTjlkKxGM5Ow=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\PennyPal.bundle.scp.css"
@@ -157,8 +157,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "xwvp45ddnm",
-      "Integrity": "L8r1ufipPKPsi9usxPQkGhutqT7NGvmoqSDL4P5rCQM=",
+      "Fingerprint": "9xb6j73pt0",
+      "Integrity": "3WCEe/dVpxwdYRSm/pNcPkIsdR+y8Wr2RoZ1UwtWefU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\PennyPal.styles.css"
@@ -178,8 +178,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "xwvp45ddnm",
-      "Integrity": "L8r1ufipPKPsi9usxPQkGhutqT7NGvmoqSDL4P5rCQM=",
+      "Fingerprint": "9xb6j73pt0",
+      "Integrity": "3WCEe/dVpxwdYRSm/pNcPkIsdR+y8Wr2RoZ1UwtWefU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\PennyPal.bundle.scp.css"
@@ -2081,13 +2081,13 @@
       ]
     },
     {
-      "Route": "PennyPal.bundle.scp.css",
-      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\s6lxhk16z5-xwvp45ddnm.gz",
+      "Route": "PennyPal.9xb6j73pt0.bundle.scp.css",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\s6lxhk16z5-9xb6j73pt0.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000279955207"
+          "Quality": "0.000212269157"
         }
       ],
       "ResponseHeaders": [
@@ -2097,19 +2097,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3571"
+          "Value": "4710"
         },
         {
           "Name": "ETag",
-          "Value": "\"EUWcF0CgWBVk/OxXOrQIB7NMWLc/raCZNN7IbCG22zM=\""
+          "Value": "\"4ZVffH+zd8zmuLjMX2dvJOTYLgdJiX9pTjlkKxGM5Ow=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 04 Jan 2025 18:09:52 GMT"
+          "Value": "Thu, 16 Jan 2025 15:32:03 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -2125,18 +2125,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"L8r1ufipPKPsi9usxPQkGhutqT7NGvmoqSDL4P5rCQM=\""
+          "Value": "W/\"3WCEe/dVpxwdYRSm/pNcPkIsdR+y8Wr2RoZ1UwtWefU=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "9xb6j73pt0"
+        },
+        {
+          "Name": "label",
+          "Value": "PennyPal.bundle.scp.css"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-L8r1ufipPKPsi9usxPQkGhutqT7NGvmoqSDL4P5rCQM="
+          "Value": "sha256-3WCEe/dVpxwdYRSm/pNcPkIsdR+y8Wr2RoZ1UwtWefU="
         }
       ]
     },
     {
-      "Route": "PennyPal.bundle.scp.css",
+      "Route": "PennyPal.9xb6j73pt0.bundle.scp.css",
       "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\PennyPal.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2146,7 +2154,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "17635"
+          "Value": "24656"
         },
         {
           "Name": "Content-Type",
@@ -2154,258 +2162,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"L8r1ufipPKPsi9usxPQkGhutqT7NGvmoqSDL4P5rCQM=\""
+          "Value": "\"3WCEe/dVpxwdYRSm/pNcPkIsdR+y8Wr2RoZ1UwtWefU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 04 Jan 2025 18:09:52 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-L8r1ufipPKPsi9usxPQkGhutqT7NGvmoqSDL4P5rCQM="
-        }
-      ]
-    },
-    {
-      "Route": "PennyPal.bundle.scp.css.gz",
-      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\s6lxhk16z5-xwvp45ddnm.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3571"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"EUWcF0CgWBVk/OxXOrQIB7NMWLc/raCZNN7IbCG22zM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 04 Jan 2025 18:09:52 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-EUWcF0CgWBVk/OxXOrQIB7NMWLc/raCZNN7IbCG22zM="
-        }
-      ]
-    },
-    {
-      "Route": "PennyPal.styles.css",
-      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\i0nxk1d540-xwvp45ddnm.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000279955207"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3571"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"EUWcF0CgWBVk/OxXOrQIB7NMWLc/raCZNN7IbCG22zM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 04 Jan 2025 18:09:52 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"L8r1ufipPKPsi9usxPQkGhutqT7NGvmoqSDL4P5rCQM=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-L8r1ufipPKPsi9usxPQkGhutqT7NGvmoqSDL4P5rCQM="
-        }
-      ]
-    },
-    {
-      "Route": "PennyPal.styles.css",
-      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\PennyPal.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "17635"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"L8r1ufipPKPsi9usxPQkGhutqT7NGvmoqSDL4P5rCQM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 04 Jan 2025 18:09:52 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-L8r1ufipPKPsi9usxPQkGhutqT7NGvmoqSDL4P5rCQM="
-        }
-      ]
-    },
-    {
-      "Route": "PennyPal.styles.css.gz",
-      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\i0nxk1d540-xwvp45ddnm.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3571"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"EUWcF0CgWBVk/OxXOrQIB7NMWLc/raCZNN7IbCG22zM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 04 Jan 2025 18:09:52 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-EUWcF0CgWBVk/OxXOrQIB7NMWLc/raCZNN7IbCG22zM="
-        }
-      ]
-    },
-    {
-      "Route": "PennyPal.xwvp45ddnm.bundle.scp.css",
-      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\s6lxhk16z5-xwvp45ddnm.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000279955207"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3571"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"EUWcF0CgWBVk/OxXOrQIB7NMWLc/raCZNN7IbCG22zM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 04 Jan 2025 18:09:52 GMT"
+          "Value": "Thu, 16 Jan 2025 15:32:03 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"L8r1ufipPKPsi9usxPQkGhutqT7NGvmoqSDL4P5rCQM=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "xwvp45ddnm"
+          "Value": "9xb6j73pt0"
         },
         {
           "Name": "label",
@@ -2413,13 +2184,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-L8r1ufipPKPsi9usxPQkGhutqT7NGvmoqSDL4P5rCQM="
+          "Value": "sha256-3WCEe/dVpxwdYRSm/pNcPkIsdR+y8Wr2RoZ1UwtWefU="
         }
       ]
     },
     {
-      "Route": "PennyPal.xwvp45ddnm.bundle.scp.css",
-      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\PennyPal.bundle.scp.css",
+      "Route": "PennyPal.9xb6j73pt0.bundle.scp.css.gz",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\s6lxhk16z5-9xb6j73pt0.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2428,7 +2199,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "17635"
+          "Value": "4710"
         },
         {
           "Name": "Content-Type",
@@ -2436,56 +2207,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"L8r1ufipPKPsi9usxPQkGhutqT7NGvmoqSDL4P5rCQM=\""
+          "Value": "\"4ZVffH+zd8zmuLjMX2dvJOTYLgdJiX9pTjlkKxGM5Ow=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 04 Jan 2025 18:09:52 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "xwvp45ddnm"
-        },
-        {
-          "Name": "label",
-          "Value": "PennyPal.bundle.scp.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-L8r1ufipPKPsi9usxPQkGhutqT7NGvmoqSDL4P5rCQM="
-        }
-      ]
-    },
-    {
-      "Route": "PennyPal.xwvp45ddnm.bundle.scp.css.gz",
-      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\s6lxhk16z5-xwvp45ddnm.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3571"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"EUWcF0CgWBVk/OxXOrQIB7NMWLc/raCZNN7IbCG22zM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 04 Jan 2025 18:09:52 GMT"
+          "Value": "Thu, 16 Jan 2025 15:32:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2503,7 +2229,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "xwvp45ddnm"
+          "Value": "9xb6j73pt0"
         },
         {
           "Name": "label",
@@ -2511,18 +2237,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-EUWcF0CgWBVk/OxXOrQIB7NMWLc/raCZNN7IbCG22zM="
+          "Value": "sha256-4ZVffH+zd8zmuLjMX2dvJOTYLgdJiX9pTjlkKxGM5Ow="
         }
       ]
     },
     {
-      "Route": "PennyPal.xwvp45ddnm.styles.css",
-      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\i0nxk1d540-xwvp45ddnm.gz",
+      "Route": "PennyPal.9xb6j73pt0.styles.css",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\i0nxk1d540-9xb6j73pt0.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000279955207"
+          "Quality": "0.000212269157"
         }
       ],
       "ResponseHeaders": [
@@ -2532,15 +2258,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3571"
+          "Value": "4710"
         },
         {
           "Name": "ETag",
-          "Value": "\"EUWcF0CgWBVk/OxXOrQIB7NMWLc/raCZNN7IbCG22zM=\""
+          "Value": "\"4ZVffH+zd8zmuLjMX2dvJOTYLgdJiX9pTjlkKxGM5Ow=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 04 Jan 2025 18:09:52 GMT"
+          "Value": "Thu, 16 Jan 2025 15:32:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2560,13 +2286,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"L8r1ufipPKPsi9usxPQkGhutqT7NGvmoqSDL4P5rCQM=\""
+          "Value": "W/\"3WCEe/dVpxwdYRSm/pNcPkIsdR+y8Wr2RoZ1UwtWefU=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "xwvp45ddnm"
+          "Value": "9xb6j73pt0"
         },
         {
           "Name": "label",
@@ -2574,12 +2300,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-L8r1ufipPKPsi9usxPQkGhutqT7NGvmoqSDL4P5rCQM="
+          "Value": "sha256-3WCEe/dVpxwdYRSm/pNcPkIsdR+y8Wr2RoZ1UwtWefU="
         }
       ]
     },
     {
-      "Route": "PennyPal.xwvp45ddnm.styles.css",
+      "Route": "PennyPal.9xb6j73pt0.styles.css",
       "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\PennyPal.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2589,7 +2315,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "17635"
+          "Value": "24656"
         },
         {
           "Name": "Content-Type",
@@ -2597,11 +2323,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"L8r1ufipPKPsi9usxPQkGhutqT7NGvmoqSDL4P5rCQM=\""
+          "Value": "\"3WCEe/dVpxwdYRSm/pNcPkIsdR+y8Wr2RoZ1UwtWefU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 04 Jan 2025 18:09:52 GMT"
+          "Value": "Thu, 16 Jan 2025 15:32:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2611,7 +2337,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "xwvp45ddnm"
+          "Value": "9xb6j73pt0"
         },
         {
           "Name": "label",
@@ -2619,13 +2345,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-L8r1ufipPKPsi9usxPQkGhutqT7NGvmoqSDL4P5rCQM="
+          "Value": "sha256-3WCEe/dVpxwdYRSm/pNcPkIsdR+y8Wr2RoZ1UwtWefU="
         }
       ]
     },
     {
-      "Route": "PennyPal.xwvp45ddnm.styles.css.gz",
-      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\i0nxk1d540-xwvp45ddnm.gz",
+      "Route": "PennyPal.9xb6j73pt0.styles.css.gz",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\i0nxk1d540-9xb6j73pt0.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2634,7 +2360,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3571"
+          "Value": "4710"
         },
         {
           "Name": "Content-Type",
@@ -2642,11 +2368,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"EUWcF0CgWBVk/OxXOrQIB7NMWLc/raCZNN7IbCG22zM=\""
+          "Value": "\"4ZVffH+zd8zmuLjMX2dvJOTYLgdJiX9pTjlkKxGM5Ow=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 04 Jan 2025 18:09:52 GMT"
+          "Value": "Thu, 16 Jan 2025 15:32:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2664,7 +2390,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "xwvp45ddnm"
+          "Value": "9xb6j73pt0"
         },
         {
           "Name": "label",
@@ -2672,7 +2398,281 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-EUWcF0CgWBVk/OxXOrQIB7NMWLc/raCZNN7IbCG22zM="
+          "Value": "sha256-4ZVffH+zd8zmuLjMX2dvJOTYLgdJiX9pTjlkKxGM5Ow="
+        }
+      ]
+    },
+    {
+      "Route": "PennyPal.bundle.scp.css",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\s6lxhk16z5-9xb6j73pt0.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000212269157"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4710"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4ZVffH+zd8zmuLjMX2dvJOTYLgdJiX9pTjlkKxGM5Ow=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 16 Jan 2025 15:32:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"3WCEe/dVpxwdYRSm/pNcPkIsdR+y8Wr2RoZ1UwtWefU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3WCEe/dVpxwdYRSm/pNcPkIsdR+y8Wr2RoZ1UwtWefU="
+        }
+      ]
+    },
+    {
+      "Route": "PennyPal.bundle.scp.css",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\PennyPal.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24656"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3WCEe/dVpxwdYRSm/pNcPkIsdR+y8Wr2RoZ1UwtWefU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 16 Jan 2025 15:32:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3WCEe/dVpxwdYRSm/pNcPkIsdR+y8Wr2RoZ1UwtWefU="
+        }
+      ]
+    },
+    {
+      "Route": "PennyPal.bundle.scp.css.gz",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\s6lxhk16z5-9xb6j73pt0.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4710"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4ZVffH+zd8zmuLjMX2dvJOTYLgdJiX9pTjlkKxGM5Ow=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 16 Jan 2025 15:32:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4ZVffH+zd8zmuLjMX2dvJOTYLgdJiX9pTjlkKxGM5Ow="
+        }
+      ]
+    },
+    {
+      "Route": "PennyPal.styles.css",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\i0nxk1d540-9xb6j73pt0.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000212269157"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4710"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4ZVffH+zd8zmuLjMX2dvJOTYLgdJiX9pTjlkKxGM5Ow=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 16 Jan 2025 15:32:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"3WCEe/dVpxwdYRSm/pNcPkIsdR+y8Wr2RoZ1UwtWefU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3WCEe/dVpxwdYRSm/pNcPkIsdR+y8Wr2RoZ1UwtWefU="
+        }
+      ]
+    },
+    {
+      "Route": "PennyPal.styles.css",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\PennyPal.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24656"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3WCEe/dVpxwdYRSm/pNcPkIsdR+y8Wr2RoZ1UwtWefU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 16 Jan 2025 15:32:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3WCEe/dVpxwdYRSm/pNcPkIsdR+y8Wr2RoZ1UwtWefU="
+        }
+      ]
+    },
+    {
+      "Route": "PennyPal.styles.css.gz",
+      "AssetFile": "C:\\Users\\Subi\\Desktop\\AD\\PennyPal\\PennyPal\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\i0nxk1d540-9xb6j73pt0.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4710"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4ZVffH+zd8zmuLjMX2dvJOTYLgdJiX9pTjlkKxGM5Ow=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 16 Jan 2025 15:32:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4ZVffH+zd8zmuLjMX2dvJOTYLgdJiX9pTjlkKxGM5Ow="
         }
       ]
     }
